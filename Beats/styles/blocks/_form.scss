@@ -1,0 +1,152 @@
+.order {
+    display: flex;
+    background: url(../../img/bg.png) 90% 76% no-repeat;
+    background-size: cover;
+    color: #FFFFFF;
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        padding-top: 72px;
+        font-family: Play;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 52px;
+        line-height: 94%;
+        text-transform: uppercase;
+    }
+}
+
+.form {
+    margin-top: 55px;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__col {
+        width: 50%;
+
+        &--right {
+            width: 48%;
+        }
+    }
+
+    &__row {
+        display: flex;
+
+        margin-top: 12px;
+
+        &:first-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__block {
+        flex: 1;
+        margin-right: 12px;
+    }
+
+    &__title {
+        display: block;
+        font-family: Play;
+        line-height: 100%;
+    }
+
+    &__input {
+        width: 100%;
+        border: none;
+        padding: 18px 12px;
+        border: solid 3px transparent;
+        border-radius: 4px;
+        margin-top: 6px;
+
+        &:focus {
+            border-color: #E01F3D;
+            outline: none;
+        }
+    }
+
+    &__input-textarea {
+        height: 152px;
+        width: 100%;
+        resize: none;
+    }
+
+    &__controls {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -16px;
+        margin-top: 10px;
+    }
+
+    &__button {
+        display: flex;
+        gap: 15px;
+        margin-top: 48px;
+        margin-left: 474px;
+        padding-bottom: 85px;
+    }
+
+}
+
+.radio {
+    display: flex;
+    cursor: pointer;
+    user-select: none;
+    align-items: center;
+    margin-left: 16px;
+    margin-top: 19px;
+
+    &__title {
+        margin-left: 10px;
+        font-family: Play;
+        display: block;
+    }
+
+    &__elm {
+        display: none;
+
+        &:checked~.radio__visible {
+            &::before {
+                display: block;
+            }
+        }
+    }
+
+    &__visible {
+        position: relative;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: #FFFFFF;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 13px;
+            height: 13px;
+            background: #E01F3D;
+            display: none;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &--checkbox {
+            border-radius: 3px;
+
+            &::before {
+                background: url(../../img/Vector\ \(5\).png)center center no-repeat;
+            }
+        }
+
+    }
+
+    &__checkbox {
+        border-radius: 0;
+    }
+
+}

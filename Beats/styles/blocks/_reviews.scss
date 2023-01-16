@@ -1,0 +1,114 @@
+.reviews {
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        margin-top: 64px;
+        font-family: 'Play';
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 52px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    &__display-inner {
+        margin-top: 32px;
+        display: flex;
+        background: $bgGrey;
+        padding: 42px 107px 42px 42px;
+        overflow: hidden;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 74px;
+            height: 74px;
+            background: #fff;
+            border-radius: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+            top: -52px;
+
+
+        }
+    }
+
+    &__avatar {
+        display: flex;
+    }
+
+    &__avatar-top {
+        object-fit: cover;
+        widows: 253px;
+        height: 264px;
+    }
+
+    &__content {
+        flex: 1;
+    }
+
+    &__content-title {
+        font-family: 'Play';
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        margin-top: 32px;
+        margin-left: 38px;
+        letter-spacing: 1px;
+    }
+
+    &__content-text {
+        margin-left: 38px;
+        font-family: 'Play';
+        font-size: 16px;
+        line-height: 19px;
+        margin-top: 27px;
+
+    }
+
+    &__content-name {
+        display: flex;
+        font-family: 'Play';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        margin-top: 38px;
+        margin-left: 38px;
+    }
+
+    &__user {
+        display: flex;
+        justify-content: center;
+        gap: 6px;
+        margin-top: 15px;
+        padding-bottom: 64px;
+    }
+
+    &__user-button {
+        border-radius: 50%;
+        overflow: hidden;
+        width: 74px;
+        height: 74px;
+        border: 4px solid transparent;
+
+        &:hover {
+            border: 4px solid $buttonColor;
+        }
+    }
+
+    &__user-item--active>button {
+        border: 4px solid #E01F3D;
+    }
+
+    &__user-icon {
+        width: 100%;
+        height: 100%;
+
+
+    }
+
+}
