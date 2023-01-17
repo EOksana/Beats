@@ -4,18 +4,13 @@
     background-size: cover;
     color: #FFFFFF;
 
-    &__title {
-        display: flex;
-        justify-content: center;
-        padding-top: 72px;
-        font-family: Play;
-        font-weight: 700;
-        font-size: 48px;
-        line-height: 52px;
-        line-height: 94%;
-        text-transform: uppercase;
-    }
 }
+
+.container--order {
+    display: flex;
+    align-items: center;
+}
+
 
 .form {
     margin-top: 55px;
@@ -86,7 +81,6 @@
         gap: 15px;
         margin-top: 48px;
         margin-left: 474px;
-        padding-bottom: 85px;
     }
 
 }
@@ -149,4 +143,9 @@
         border-radius: 0;
     }
 
+}
+
+.section-title {
+    display: flex;
+    justify-content: center;
 }

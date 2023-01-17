@@ -1,18 +1,5 @@
 .hello {
-    position: relative;
     background: $bgGrey;
-    padding-bottom: 70px;
-
-    &__title {
-        font-family: 'Play';
-        font-weight: 700;
-        font-size: 48px;
-        line-height: 52px;
-        max-width: 400px;
-        margin-top: 94px;
-        text-transform: uppercase;
-        letter-spacing: 1%;
-    }
 
     &__description {
         font-size: 21px;
@@ -25,37 +12,51 @@
         margin-top: 36px;
     }
 
-    &::after {
-        content: "";
-        position: absolute;
-        top: 111px;
-        right: 270px;
-        background: url("../img/headsets.png");
-        height: 489px;
-        width: 489px;
+    &__content {
+        margin-bottom: 50px;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: -11%;
+            right: -79%;
+            background: url("../img/headsets.png");
+            height: 489px;
+            width: 489px;
+        }
+    }
+
+    &__advantage-list {
+        display: flex;
+        margin-top: 66px;
+    }
+
+    &__advantage-item {
+        display: flex;
+        margin-right: 8px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__advantage-icon {
+        margin-right: 12px;
+    }
+
+    &__advantage-text {
+        width: 114px;
+        font-family: 'Play';
     }
 }
 
-.hello__advantage-list {
+.container--hello {
     display: flex;
-    margin-top: 66px;
-
+    align-items: center;
+    height: calc(100% - 64px);
 }
 
-.hello__advantage-item {
-    display: flex;
-    margin-right: 8px;
-
-    &:last-child {
-        margin-right: 0;
-    }
-}
-
-.hello__advantage-icon {
-    margin-right: 12px;
-}
-
-.hello__advantage-text {
-    width: 114px;
-    font-family: 'Play';
+.section-title--hello {
+    max-width: 400px;
 }

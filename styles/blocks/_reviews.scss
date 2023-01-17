@@ -1,17 +1,5 @@
 .reviews {
 
-    &__title {
-        display: flex;
-        justify-content: center;
-        margin-top: 64px;
-        font-family: 'Play';
-        font-weight: 700;
-        font-size: 48px;
-        line-height: 52px;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-    }
-
     &__display-inner {
         margin-top: 32px;
         display: flex;
@@ -85,7 +73,6 @@
         justify-content: center;
         gap: 6px;
         margin-top: 15px;
-        padding-bottom: 64px;
     }
 
     &__user-button {
@@ -111,4 +98,14 @@
 
     }
 
+}
+
+.container--reviews {
+    display: flex;
+    align-items: center;
+}
+
+.section-title--reviews {
+    display: flex;
+    justify-content: center;
 }

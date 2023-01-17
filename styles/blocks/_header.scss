@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 24px;
+    height: 64px;
 
     &__content {
         display: flex;
@@ -46,4 +46,9 @@
         font-size: 18px;
         font-family: 'Play';
     }
+}
+
+.container--header {
+    display: flex;
+    align-items: flex-end;
 }
