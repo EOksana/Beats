@@ -2,18 +2,18 @@
     background: $bgGrey;
 
     &__description {
-        font-size: 21px;
-        line-height: 25px;
-        max-width: 332px;
-        margin-top: 22px;
+        font-size: rem(21px);
+        line-height: rem(25px);
+        max-width: rem(332px);
+        margin-top: rem(22px);
     }
 
     &__button {
-        margin-top: 36px;
+        margin-top: rem(36px);
     }
 
     &__content {
-        margin-bottom: 50px;
+        margin-bottom: rem(50px);
         position: relative;
 
         &::after {
@@ -22,19 +22,19 @@
             top: -11%;
             right: -79%;
             background: url("../img/headsets.png");
-            height: 489px;
-            width: 489px;
+            height: rem(489px);
+            width: rem(489px);
         }
     }
 
     &__advantage-list {
         display: flex;
-        margin-top: 66px;
+        margin-top: rem(66px);
     }
 
     &__advantage-item {
         display: flex;
-        margin-right: 8px;
+        margin-right: rem(8px);
 
         &:last-child {
             margin-right: 0;
@@ -42,11 +42,11 @@
     }
 
     &__advantage-icon {
-        margin-right: 12px;
+        margin-right: rem(12px);
     }
 
     &__advantage-text {
-        width: 114px;
+        width: rem(114px);
         font-family: 'Play';
     }
 }
@@ -58,5 +58,5 @@
 }
 
 .section-title--hello {
-    max-width: 400px;
+    max-width: rem(400px);
 }

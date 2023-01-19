@@ -1,11 +1,11 @@
 .fixed-menu {
     position: fixed;
     z-index: 1;
-    top: 247px;
-    right: 220px;
+    top: rem(247px);
+    right: rem(220px);
 
     &__item {
-        margin-bottom: 15px;
+        margin-bottom: rem(15px);
         background-color: $text;
         opacity: 0.6;
         border-radius: 50%;
@@ -18,10 +18,10 @@
             &:before {
                 content: "";
                 display: block;
-                width: 16px;
-                height: 16px;
+                width: rem(16px);
+                height: rem(16px);
                 border-radius: 50%;
-                border: 1px solid $buttonColor;
+                border: rem(1px) solid $buttonColor;
                 position: absolute;
                 top: 50%;
                 left: 50%;
@@ -32,10 +32,10 @@
     }
 
     &__link {
-        width: 6px;
-        height: 6px;
+        width: rem(6px);
+        height: rem(6px);
         border-radius: 50%;
-        border: 1px solid transparent;
+        border: rem(1px) solid transparent;
         display: block;
         position: relative;
     }

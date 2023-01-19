@@ -1,6 +1,7 @@
 body,
 html {
   height: 100%;
+  font-size: 16px;
 }
 
 .section {
@@ -24,12 +25,11 @@ button {
 }
 button.button {
   background-color: #E01F3D;
-  border-radius: 100px;
+  border-radius: 6.25rem;
   color: #FFFFFF;
   font-weight: 700;
-  line-height: 18px;
-  font-size: 16px;
-  padding: 18px 41px;
+  line-height: 1.125rem;
+  padding: 1.125rem 2.5625rem;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -50,8 +50,8 @@ button.button--transparent:hover {
 .section-title {
   font-family: "Play";
   font-weight: 700;
-  font-size: 48px;
-  line-height: 52px;
+  font-size: 3rem;
+  line-height: 3.25rem;
   text-transform: uppercase;
   letter-spacing: 1%;
 }
@@ -96,9 +96,17 @@ img {
 }
 
 .container {
+  width: 95%;
   margin: 0 auto;
-  width: 940px;
+  max-width: 940px;
   height: 100%;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
 }
 
 .header {
@@ -108,9 +116,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   height: 64px;
 }
 .header__content {
@@ -176,16 +181,16 @@ img {
   background: #F5F5F5;
 }
 .hello__description {
-  font-size: 21px;
-  line-height: 25px;
-  max-width: 332px;
-  margin-top: 22px;
+  font-size: 1.3125rem;
+  line-height: 1.5625rem;
+  max-width: 20.75rem;
+  margin-top: 1.375rem;
 }
 .hello__button {
-  margin-top: 36px;
+  margin-top: 2.25rem;
 }
 .hello__content {
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
   position: relative;
 }
 .hello__content::after {
@@ -194,29 +199,29 @@ img {
   top: -11%;
   right: -79%;
   background: url("../img/headsets.png");
-  height: 489px;
-  width: 489px;
+  height: 30.5625rem;
+  width: 30.5625rem;
 }
 .hello__advantage-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 66px;
+  margin-top: 4.125rem;
 }
 .hello__advantage-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 8px;
+  margin-right: 0.5rem;
 }
 .hello__advantage-item:last-child {
   margin-right: 0;
 }
 .hello__advantage-icon {
-  margin-right: 12px;
+  margin-right: 0.75rem;
 }
 .hello__advantage-text {
-  width: 114px;
+  width: 7.125rem;
   font-family: "Play";
 }
 
@@ -231,12 +236,12 @@ img {
 }
 
 .section-title--hello {
-  max-width: 400px;
+  max-width: 25rem;
 }
 
 .why {
   height: 100vh;
-  min-height: 650px;
+  min-height: 40.625rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -251,9 +256,8 @@ img {
 .why__subtitle {
   font-family: "Play";
   font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  margin-top: 18px;
+  line-height: 1.1875rem;
+  margin-top: 1.125rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -270,7 +274,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 63px;
+  margin-top: 3.9375rem;
   text-align: center;
 }
 .why__benefits-item {
@@ -278,7 +282,7 @@ img {
       -ms-flex: 1;
           flex: 1;
   margin: 0 3%;
-  padding: 0 14px 0 15px;
+  padding: 0 0.875rem 0 0.9375rem;
 }
 .why__benefits-item:first-child {
   margin-left: 0;
@@ -293,8 +297,8 @@ img {
   content: "";
   position: absolute;
   background: url(../img/Combined\ shape\ 2204.png);
-  width: 70px;
-  height: 24px;
+  width: 4.375rem;
+  height: 1.5rem;
   right: -25%;
   top: 55%;
   -webkit-transform: translate(0, -50%);
@@ -304,8 +308,8 @@ img {
   content: "";
   position: absolute;
   background: url(../img/Combined\ shape\ 2204.png);
-  width: 70px;
-  height: 24px;
+  width: 4.375rem;
+  height: 1.5rem;
   left: -25%;
   top: 55%;
   -webkit-transform: translate(0, -50%);
@@ -320,23 +324,23 @@ img {
           justify-content: center;
 }
 .why__benefit-title {
-  margin-top: 23px;
+  margin-top: 1.4375rem;
   font-family: "Play";
   font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
 }
 .why__benefit-text {
-  margin-top: 7px;
-  max-width: 247px;
+  margin-top: 0.4375rem;
+  max-width: 15.4375rem;
   font-family: "Play";
-  line-height: 19px;
+  line-height: 1.1875rem;
   text-align: center;
 }
 .why__benefit-pic {
   position: relative;
-  width: 128px;
-  height: 128px;
+  width: 8rem;
+  height: 8rem;
   background: #F5F5F5;
   border-radius: 50%;
   max-height: 100%;
@@ -368,12 +372,12 @@ img {
 }
 
 .reviews__display-inner {
-  margin-top: 32px;
+  margin-top: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background: #F5F5F5;
-  padding: 42px 107px 42px 42px;
+  padding: 2.625rem 6.6875rem 2.625rem 2.625rem;
   overflow: hidden;
   position: relative;
 }
@@ -381,14 +385,14 @@ img {
   content: "";
   position: absolute;
   display: block;
-  width: 74px;
-  height: 74px;
+  width: 4.625rem;
+  height: 4.625rem;
   background: #fff;
   border-radius: 50%;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  top: -52px;
+  top: -3.25rem;
 }
 .reviews__avatar {
   display: -webkit-box;
@@ -398,8 +402,8 @@ img {
 .reviews__avatar-top {
   -o-object-fit: cover;
      object-fit: cover;
-  widows: 253px;
-  height: 264px;
+  widows: 15.8125rem;
+  height: 16.5rem;
 }
 .reviews__content {
   -webkit-box-flex: 1;
@@ -409,18 +413,17 @@ img {
 .reviews__content-title {
   font-family: "Play";
   font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  margin-top: 32px;
-  margin-left: 38px;
-  letter-spacing: 1px;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  margin-top: 2rem;
+  margin-left: 2.375rem;
+  letter-spacing: 0.0625rem;
 }
 .reviews__content-text {
-  margin-left: 38px;
+  margin-left: 2.375rem;
   font-family: "Play";
-  font-size: 16px;
-  line-height: 19px;
-  margin-top: 27px;
+  line-height: 1.1875rem;
+  margin-top: 1.6875rem;
 }
 .reviews__content-name {
   display: -webkit-box;
@@ -429,10 +432,10 @@ img {
   font-family: "Play";
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 21px;
-  margin-top: 38px;
-  margin-left: 38px;
+  font-size: 1.125rem;
+  line-height: 1.3125rem;
+  margin-top: 2.375rem;
+  margin-left: 2.375rem;
 }
 .reviews__user {
   display: -webkit-box;
@@ -441,21 +444,21 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 6px;
-  margin-top: 15px;
+  gap: 0.375rem;
+  margin-top: 0.9375rem;
 }
 .reviews__user-button {
   border-radius: 50%;
   overflow: hidden;
-  width: 74px;
-  height: 74px;
-  border: 4px solid transparent;
+  width: 4.625rem;
+  height: 4.625rem;
+  border: 0.25rem solid transparent;
 }
 .reviews__user-button:hover {
-  border: 4px solid #E01F3D;
+  border: 0.25rem solid #E01F3D;
 }
 .reviews__user-item--active > button {
-  border: 4px solid #E01F3D;
+  border: 0.25rem solid #E01F3D;
 }
 .reviews__user-icon {
   width: 100%;
@@ -638,11 +641,11 @@ img {
 .fixed-menu {
   position: fixed;
   z-index: 1;
-  top: 247px;
-  right: 220px;
+  top: 15.4375rem;
+  right: 13.75rem;
 }
 .fixed-menu__item {
-  margin-bottom: 15px;
+  margin-bottom: 0.9375rem;
   background-color: #292929;
   opacity: 0.6;
   border-radius: 50%;
@@ -655,10 +658,10 @@ img {
 .fixed-menu__item--active:before {
   content: "";
   display: block;
-  width: 16px;
-  height: 16px;
+  width: 1rem;
+  height: 1rem;
   border-radius: 50%;
-  border: 1px solid #E01F3D;
+  border: 0.0625rem solid #E01F3D;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -666,10 +669,10 @@ img {
           transform: translate(-50%, -50%);
 }
 .fixed-menu__link {
-  width: 6px;
-  height: 6px;
+  width: 0.375rem;
+  height: 0.375rem;
   border-radius: 50%;
-  border: 1px solid transparent;
+  border: 0.0625rem solid transparent;
   display: block;
   position: relative;
 }

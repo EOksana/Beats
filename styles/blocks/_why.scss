@@ -1,6 +1,6 @@
 .why {
     height: 100vh;
-    min-height: 650px;
+    min-height: rem(650px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,9 +8,9 @@
     &__subtitle {
         font-family: 'Play';
         font-weight: 400;
-        font-size: 16px;
-        line-height: 19px;
-        margin-top: 18px;
+        // font-size: rem(16px);
+        line-height: rem(19px);
+        margin-top: rem(18px);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -20,14 +20,14 @@
 
     &__benefits {
         display: flex;
-        margin-top: 63px;
+        margin-top: rem(63px);
         text-align: center;
     }
 
     &__benefits-item {
         flex: 1;
         margin: 0 3%;
-        padding: 0 14px 0 15px;
+        padding: 0 rem(14px) 0 rem(15px);
 
         &:first-child {
             margin-left: 0;
@@ -45,8 +45,8 @@
                     content: "";
                     position: absolute;
                     background: url(../img/Combined\ shape\ 2204.png);
-                    width: 70px;
-                    height: 24px;
+                    width: rem(70px);
+                    height: rem(24px);
                     right: -25%;
                     top: 55%;
                     transform: translate(0, -50%)
@@ -56,8 +56,8 @@
                     content: "";
                     position: absolute;
                     background: url(../img/Combined\ shape\ 2204.png);
-                    width: 70px;
-                    height: 24px;
+                    width: rem(70px);
+                    height: rem(24px);
                     left: -25%;
                     top: 55%;
                     transform: translate(0, -50%)
@@ -72,25 +72,25 @@
     }
 
     &__benefit-title {
-        margin-top: 23px;
+        margin-top: rem(23px);
         font-family: 'Play';
         font-weight: 700;
-        font-size: 24px;
-        line-height: 28px;
+        font-size: rem(24px);
+        line-height: rem(28px);
     }
 
     &__benefit-text {
-        margin-top: 7px;
-        max-width: 247px;
+        margin-top: rem(7px);
+        max-width: rem(247px);
         font-family: 'Play';
-        line-height: 19px;
+        line-height: rem(19px);
         text-align: center;
     }
 
     &__benefit-pic {
         position: relative;
-        width: 128px;
-        height: 128px;
+        width: rem(128px);
+        height: rem(128px);
         background: $bgGrey;
         border-radius: 50%;
         max-height: 100%;

@@ -1,6 +1,7 @@
 body,
 html {
     height: 100%;
+    font-size: 16px;
 }
 
 .section {
@@ -25,12 +26,12 @@ button {
 
     &.button {
         background-color: $buttonColor;
-        border-radius: 100px;
+        border-radius: rem(100px);
         color: #FFFFFF;
         font-weight: 700;
-        line-height: 18px;
-        font-size: 16px;
-        padding: 18px 41px;
+        line-height: rem(18px);
+        // font-size: rem(16px);
+        padding: rem(18px) rem(41px);
         transition: 0.4s;
 
         &:hover {
@@ -57,8 +58,8 @@ button {
 .section-title {
     font-family: 'Play';
     font-weight: 700;
-    font-size: 48px;
-    line-height: 52px;
+    font-size: rem(48px);
+    line-height: rem(52px);
     text-transform: uppercase;
     letter-spacing: 1%;
 }
@@ -104,7 +105,16 @@ img {
 
 
 .container {
+    width: 95%;
     margin: 0 auto;
-    width: $containerWidth;
+    max-width: $containerWidth;
     height: 100%;
+
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
 }
