@@ -8,7 +8,6 @@
     &__subtitle {
         font-family: 'Play';
         font-weight: 400;
-        // font-size: rem(16px);
         line-height: rem(19px);
         margin-top: rem(18px);
         display: flex;
@@ -16,18 +15,61 @@
         align-items: center;
         text-align: center;
         padding: 0 22%;
+
+        @include tablets {
+            margin-top: rem(11px);
+            // max-width: rem(584px);
+            padding: 0 10%;
+
+        }
+
+        @include phones {
+            padding: 0 1%;
+        }
+    }
+
+    &__content {
+        @include phones {
+            margin-bottom: rem(21px);
+        }
     }
 
     &__benefits {
         display: flex;
         margin-top: rem(63px);
         text-align: center;
+
+        @include tablets {
+            justify-content: space-between;
+            margin-top: rem(54px);
+
+        }
+
+        @include phones {
+            flex-direction: column;
+
+            // margin-bottom: rem(182px);
+            gap: rem(31px);
+        }
     }
 
     &__benefits-item {
         flex: 1;
         margin: 0 3%;
         padding: 0 rem(14px) 0 rem(15px);
+
+        @include tablets {
+            margin: 0;
+            padding: 0 rem(10px) 0 rem(10px);
+
+        }
+
+        @include phones {
+            display: flex;
+            padding: 0 rem(10px) 0 rem(5px);
+
+
+        }
 
         &:first-child {
             margin-left: 0;
@@ -41,30 +83,33 @@
             &>.why__benefit-icon {
                 position: relative;
 
-                &::after {
-                    content: "";
-                    position: absolute;
-                    background: url(../img/Combined\ shape\ 2204.png);
-                    width: rem(70px);
-                    height: rem(24px);
-                    right: -25%;
-                    top: 55%;
-                    transform: translate(0, -50%)
-                }
+                @include desktopOnly {
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        background: url(../img/Combined\ shape\ 2204.png);
+                        width: rem(70px);
+                        height: rem(24px);
+                        right: -25%;
+                        top: 55%;
+                        transform: translate(0, -50%)
+                    }
 
-                &::before {
-                    content: "";
-                    position: absolute;
-                    background: url(../img/Combined\ shape\ 2204.png);
-                    width: rem(70px);
-                    height: rem(24px);
-                    left: -25%;
-                    top: 55%;
-                    transform: translate(0, -50%)
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        background: url(../img/Combined\ shape\ 2204.png);
+                        width: rem(70px);
+                        height: rem(24px);
+                        left: -25%;
+                        top: 55%;
+                        transform: translate(0, -50%)
+                    }
                 }
             }
         }
     }
+
 
     &__benefit-icon {
         display: flex;
@@ -77,6 +122,13 @@
         font-weight: 700;
         font-size: rem(24px);
         line-height: rem(28px);
+
+        @include phones {
+            margin-top: rem(10px);
+            text-align: left;
+            // display: flex;
+            // justify-content: start;
+        }
     }
 
     &__benefit-text {
@@ -85,6 +137,18 @@
         font-family: 'Play';
         line-height: rem(19px);
         text-align: center;
+
+        @include tablets {
+            margin-top: rem(16px);
+        }
+
+        @include phones {
+            min-width: rem(302px);
+            margin-top: rem(6px);
+            text-align: left;
+            // display: flex;
+            // justify-content: start;
+        }
     }
 
     &__benefit-pic {
@@ -102,14 +166,40 @@
             transform: translate(-50%, -50%)
         }
     }
-}
 
-.section-title--why {
-    display: flex;
-    justify-content: center;
-}
+    &__benefits-content {
 
-.container--why {
-    display: flex;
-    align-items: center;
+        @include phones {
+            display: flex;
+            flex-direction: column;
+            margin-left: rem(7px);
+            // margin-top: 65px;
+
+            // &:first-child {
+            //     margin-top: 0;
+            // }
+
+        }
+    }
+
+
+    .section-title--why {
+        display: flex;
+        justify-content: center;
+
+        @include tablets {
+            letter-spacing: 0;
+        }
+
+        @include phones {
+            font-size: 32px;
+            line-height: 36px;
+            // margin-top: rem(15px);
+        }
+    }
+
+    .container--why {
+        display: flex;
+        align-items: center;
+    }
 }

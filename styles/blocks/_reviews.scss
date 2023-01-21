@@ -1,4 +1,16 @@
+.reviews section {
+    @include tablets {
+        height: rem(976px);
+    }
+}
+
 .reviews {
+
+    &__display {
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+    }
 
     &__display-inner {
         margin-top: rem(32px);
@@ -7,6 +19,13 @@
         padding: rem(42px) rem(107px) rem(42px) rem(42px);
         overflow: hidden;
         position: relative;
+
+        @include tablets {
+            padding: rem(56px) rem(23px) rem(15px);
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
 
         &::before {
             content: "";
@@ -32,6 +51,11 @@
         object-fit: cover;
         widows: rem(253px);
         height: rem(264px);
+
+        @include tablets {
+            width: rem(130px);
+            height: rem(130px);
+        }
     }
 
     &__content {
@@ -46,6 +70,13 @@
         margin-top: rem(32px);
         margin-left: rem(38px);
         letter-spacing: rem(1px);
+
+        @include tablets {
+            margin: 0;
+            margin-top: rem(32px);
+            // display: flex;
+            // justify-content: center;
+        }
     }
 
     &__content-text {
@@ -54,17 +85,30 @@
         line-height: rem(19px);
         margin-top: rem(27px);
 
+        @include tablets {
+            margin: 0;
+            margin-top: rem(16px);
+        }
+
+
+
     }
 
     &__content-name {
         display: flex;
         font-family: 'Play';
-        font-style: normal;
         font-weight: 700;
         font-size: rem(18px);
         line-height: rem(21px);
         margin-top: rem(38px);
         margin-left: rem(38px);
+
+        @include tablets {
+            margin: 0;
+            margin-top: rem(35px);
+            justify-content: center;
+
+        }
     }
 
     &__user {
@@ -72,6 +116,10 @@
         justify-content: center;
         gap: rem(6px);
         margin-top: rem(15px);
+
+        @include tablets {
+            margin-top: rem(59px);
+        }
     }
 
     &__user-button {
@@ -105,6 +153,5 @@
 }
 
 .section-title--reviews {
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }

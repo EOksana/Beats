@@ -1,11 +1,41 @@
+// $tablets: 768px;
+// $phones: 480px;
+
+// @mixin tablets {
+//     @media screen and (max-width: $tablets) {
+//         @content;
+//     }
+// }
+
+// @mixin phones {
+//     @media screen and (max-width: $phones) {
+//         @content;
+//     }
+// }
+
+html {
+    font-size: $baseFontsize;
+
+    // @include tablets {
+    //     font-size: $baseFontsize - 1px;
+    // }
+
+    // @include phones {
+    //     font-size: $baseFontsize - 2px;
+    // }
+}
+
 body,
 html {
     height: 100%;
-    font-size: 16px;
 }
 
 .section {
     height: 100vh;
+
+    // @include tablets {
+    //     height: 100%;
+    // }
 }
 
 body {
@@ -32,7 +62,14 @@ button {
         line-height: rem(18px);
         // font-size: rem(16px);
         padding: rem(18px) rem(41px);
+        letter-spacing: rem(2px);
         transition: 0.4s;
+
+        @include tablets {
+            padding: rem(21px) rem(41px);
+        }
+
+        @include phones {}
 
         &:hover {
             background: #FFFFFF;
@@ -61,7 +98,7 @@ button {
     font-size: rem(48px);
     line-height: rem(52px);
     text-transform: uppercase;
-    letter-spacing: 1%;
+    letter-spacing: rem(2px);
 }
 
 

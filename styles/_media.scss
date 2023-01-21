@@ -1,3 +1,28 @@
 @function rem($px) {
-    @return $px / 16px+0rem;
+    @return $px / $baseFontsize +0rem;
+}
+
+// @function remTab($px) {
+//     @return $px / 15px+0rem;
+// }
+
+// @function remPh($px) {
+//     @return $px / 14px+0rem;
+// }
+@mixin desktopOnly {
+    @media (min-width: ($tablets +1px)) {
+        @content;
+    }
+}
+
+@mixin tablets {
+    @media (max-width: $tablets) {
+        @content;
+    }
+}
+
+@mixin phones {
+    @media (max-width: $phones) {
+        @content;
+    }
 }
