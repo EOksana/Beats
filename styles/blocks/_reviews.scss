@@ -10,6 +10,10 @@
         // display: flex;
         // align-items: center;
         // justify-content: center;
+
+        @include phones {
+            margin-top: rem(20px);
+        }
     }
 
     &__display-inner {
@@ -27,6 +31,11 @@
             text-align: center;
         }
 
+        @include phones {
+            // margin-top: rem(5px);
+            padding: rem(56px) rem(25px) rem(10px);
+        }
+
         &::before {
             content: "";
             position: absolute;
@@ -39,6 +48,10 @@
             transform: translateX(-50%);
             top: rem(-52px);
 
+            @include phones {
+                display: none;
+            }
+
 
         }
     }
@@ -49,7 +62,7 @@
 
     &__avatar-top {
         object-fit: cover;
-        widows: rem(253px);
+        width: rem(253px);
         height: rem(264px);
 
         @include tablets {
@@ -77,6 +90,10 @@
             // display: flex;
             // justify-content: center;
         }
+
+        @include phones {
+            margin-top: rem(17px);
+        }
     }
 
     &__content-text {
@@ -88,6 +105,10 @@
         @include tablets {
             margin: 0;
             margin-top: rem(16px);
+        }
+
+        @include phones {
+            margin-top: rem(12px);
         }
 
 
@@ -109,6 +130,11 @@
             justify-content: center;
 
         }
+
+        @include phones {
+            margin-top: rem(49px);
+            margin-bottom: 15px;
+        }
     }
 
     &__user {
@@ -119,6 +145,10 @@
 
         @include tablets {
             margin-top: rem(59px);
+        }
+
+        @include phones {
+            margin-top: rem(50px);
         }
     }
 
@@ -154,4 +184,14 @@
 
 .section-title--reviews {
     text-align: center;
+
+    @include phones {
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    @include phones {
+        letter-spacing: 0;
+        margin-top: rem(11px);
+    }
 }

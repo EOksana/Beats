@@ -1,6 +1,6 @@
 .order {
     display: flex;
-    background: url(../img/bg.png) 90% 76% no-repeat;
+    background: url("../img/bg.png") 90% 76% no-repeat;
     background-size: cover;
     color: #FFFFFF;
 
@@ -19,6 +19,10 @@
         margin-top: rem(20px);
     }
 
+    @include phones {
+        margin-top: rem(28px);
+    }
+
     &__content {
         display: flex;
         justify-content: space-between;
@@ -28,6 +32,8 @@
             justify-content: center;
             align-items: center;
         }
+
+        @include phones {}
     }
 
     &__col {
@@ -40,6 +46,10 @@
         @include tablets {
             width: 100%;
             padding: 0 18%;
+        }
+
+        @include phones {
+            padding: 0;
         }
     }
 
@@ -111,6 +121,12 @@
             margin-right: rem(18px);
             max-width: 80%;
             margin-top: rem(22px);
+        }
+
+        @include phones {
+            justify-content: space-evenly;
+            margin-left: 43px;
+            margin-top: 16px;
         }
 
 
@@ -214,4 +230,9 @@
     display: flex;
     justify-content: center;
     letter-spacing: 0;
+
+    @include phones {
+        font-size: rem(32px);
+        line-height: rem(36px);
+    }
 }

@@ -48,12 +48,16 @@
                                         </li>
                                     </ul>
                                 </nav>
-                                <a href="tel:+78009039090" class="contacts">
-                                     <div class="contacts__icon">
-                                        <!-- <img src="./img/Vector (1).png" alt="phone-icon"> -->
-                                     </div>
-                                     <div class="contacts__phone header__contacts__phone">8&nbsp;800&nbsp;903&nbsp;90&nbsp;90</div>
-                                 </a>
+                                <div class="contacts contacts--header">
+                                    <a href="tel:+78009039090" class="contacts__link">
+                                        <div class="contacts__phone">
+                                            <svg class="contacts__icon">
+                                                <use xlink:href="./img/sprite.svg#phone"></use>
+                                            </svg>
+                                            8&nbsp;800&nbsp;903&nbsp;90&nbsp;90
+                                        </div>
+                                     </a>
+                                </div>
                             </div>
                         </div>
                     </header>
@@ -65,15 +69,24 @@
                             <div class="hello__advantage">
                                 <ul class="hello__advantage-list">
                                     <li class="hello__advantage-item">
-                                        <img class="hello__advantage-icon" src="./img/main-1.png" alt="#">
+                                        <!-- <img class="hello__advantage-icon" src="./img/main-1.png" alt="#"> -->
+                                        <svg class="hello__advantage-icon">
+                                            <use xlink:href="./img/sprite.svg#ear"></use>
+                                        </svg>
                                         <p class="hello__advantage-text">Безупречный звук</p>
                                     </li>
                                     <li class="hello__advantage-item">
-                                        <img class="hello__advantage-icon" src="./img/charging 1.png" alt="#">
+                                        <!-- <img class="hello__advantage-icon" src="./img/charging 1.png" alt="#"> -->
+                                        <svg class="hello__advantage-icon">
+                                            <use xlink:href="./img/sprite.svg#charge"></use>
+                                        </svg>
                                         <p class="hello__advantage-text">До 40 часов работы</p>
                                     </li>
                                     <li class="hello__advantage-item">
-                                        <img class="hello__advantage-icon" src="./img/main-3.png" alt="#">
+                                        <!-- <img class="hello__advantage-icon" src="./img/main-3.png" alt="#"> -->
+                                        <svg class="hello__advantage-icon">
+                                            <use xlink:href="./img/sprite.svg#plug"></use>
+                                        </svg>
                                         <p class="hello__advantage-text">Технология Fast Fuel</p>
                                     </li>
                                 </ul>
@@ -256,6 +269,58 @@
                             </form>
                         </div>
                     </div>
+                </section>
+                <section class="map section">
+                    <div class="container container--map">
+                        <div class="map__content"></div>
+                    </div>
+                    <footer class="footer">
+                        <div class="container container--footer">
+                            <div class="footer__content">
+                                <div class="contacts contacts--footer">
+                                    <address class="contacts__address">Москва, ул.Новый Арбат, д.31/12</address>
+                                    <a href="tel:+78009039090" class="contacts__link">
+                                        <div class="contacts__phone">
+                                            <svg class="contacts__icon">
+                                                <use xlink:href="./img/sprite.svg#phone"></use>
+                                            </svg>
+                                            8&nbsp;800&nbsp;903&nbsp;90&nbsp;90
+                                        </div>
+                                    </a>
+                                </div>
+                                <ul class="footer__social-list">
+                                    <li class="footer__social-item">
+                                        <a href="#" class="footer__social-link">
+                                            <svg class="footer__social-icon">
+                                                <use xlink:href="./img/sprite.svg#vk"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="footer__social-item">
+                                        <a href="#" class="footer__social-link">
+                                            <svg class="footer__social-icon">
+                                                <use xlink:href="./img/sprite.svg#facebook"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="footer__social-item">
+                                        <a href="#" class="footer__social-link">
+                                            <svg class="footer__social-icon">
+                                                <use xlink:href="./img/sprite.svg#instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="footer__social-item">
+                                        <a href="#" class="footer__social-link">
+                                            <svg class="footer__social-icon">
+                                                <use xlink:href="./img/sprite.svg#telegram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </footer>
                 </section>
             </main>
         </div>

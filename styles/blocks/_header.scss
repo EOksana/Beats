@@ -9,35 +9,6 @@
         justify-content: space-between;
         width: 100%;
     }
-
-    &__contacts__phone {
-        position: relative;
-
-        &::before {
-            content: "";
-            position: absolute;
-            background: url(../img/phone\ handset.png);
-            width: rem(13px);
-            height: rem(13px);
-            margin-right: rem(10px);
-            left: -13%;
-            top: 49%;
-            transform: translate(0, -50%)
-        }
-
-        @include tablets {
-            display: none;
-        }
-
-        @include phones {
-            display: none;
-        }
-    }
-
-    // &__logo {
-    //     // margin-right: 38px;
-    // }
-
 }
 
 .menu {
@@ -68,21 +39,7 @@
     }
 }
 
-.contacts {
-    display: flex;
-    align-items: center;
 
-    &__icon {
-        // width: rem(13px);
-        // height: rem(13px);
-        // margin-right: rem(10px);
-    }
-
-    &__phone {
-        font-size: rem(18px);
-        font-family: 'Play';
-    }
-}
 
 .container--header {
     display: flex;

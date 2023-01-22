@@ -4,6 +4,16 @@
     top: rem(247px);
     right: rem(220px);
 
+    @include tablets {
+        top: 32%;
+        right: 5%;
+    }
+
+    @include phones {
+        top: 32%;
+        right: 5%;
+    }
+
     &__item {
         margin-bottom: rem(15px);
         background-color: $text;
