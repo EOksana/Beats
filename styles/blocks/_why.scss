@@ -110,10 +110,15 @@
         }
     }
 
-
     &__benefit-icon {
         display: flex;
         justify-content: center;
+    }
+
+
+    &__benefit-svg {
+        width: 100%;
+        height: 100%;
     }
 
     &__benefit-title {
@@ -126,8 +131,6 @@
         @include phones {
             margin-top: rem(10px);
             text-align: left;
-            // display: flex;
-            // justify-content: start;
         }
     }
 
@@ -152,19 +155,12 @@
     }
 
     &__benefit-pic {
-        position: relative;
+        // position: relative;
         width: rem(128px);
         height: rem(128px);
         background: $bgGrey;
         border-radius: 50%;
         max-height: 100%;
-
-        &>img {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%)
-        }
     }
 
     &__benefits-content {
