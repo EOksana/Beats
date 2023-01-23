@@ -54,13 +54,6 @@
                 height: rem(323px);
             }
 
-            // @include phones {
-            //     display: flex;
-            //     flex-direction: column;
-            //     flex: 1;
-            //     align-items: center;
-            // }
-
         }
 
         &::after {
@@ -105,12 +98,7 @@
         @include tablets {
             display: none;
         }
-
-        @include phones {
-            // display: none;
-        }
     }
-
 }
 
 .container--hello {
@@ -132,8 +120,8 @@
     }
 
     @include phones {
-        font-size: 32px;
-        line-height: 36px;
+        font-size: rem(32px);
+        line-height: rem(36px);
         margin-top: rem(46px);
         max-width: 70%;
     }

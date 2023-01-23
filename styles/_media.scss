@@ -2,13 +2,6 @@
     @return $px / $baseFontsize +0rem;
 }
 
-// @function remTab($px) {
-//     @return $px / 15px+0rem;
-// }
-
-// @function remPh($px) {
-//     @return $px / 14px+0rem;
-// }
 @mixin desktopOnly {
     @media (min-width: ($tablets +1px)) {
         @content;

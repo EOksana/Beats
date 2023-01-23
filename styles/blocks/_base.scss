@@ -1,28 +1,5 @@
-// $tablets: 768px;
-// $phones: 480px;
-
-// @mixin tablets {
-//     @media screen and (max-width: $tablets) {
-//         @content;
-//     }
-// }
-
-// @mixin phones {
-//     @media screen and (max-width: $phones) {
-//         @content;
-//     }
-// }
-
 html {
     font-size: $baseFontsize;
-
-    // @include tablets {
-    //     font-size: $baseFontsize - 1px;
-    // }
-
-    // @include phones {
-    //     font-size: $baseFontsize - 2px;
-    // }
 }
 
 body,
@@ -32,10 +9,6 @@ html {
 
 .section {
     height: 100vh;
-
-    // @include tablets {
-    //     height: 100%;
-    // }
 }
 
 body {
@@ -60,7 +33,6 @@ button {
         color: #FFFFFF;
         font-weight: 700;
         line-height: rem(18px);
-        // font-size: rem(16px);
         padding: rem(18px) rem(41px);
         letter-spacing: rem(2px);
         transition: 0.4s;
@@ -68,8 +40,6 @@ button {
         @include tablets {
             padding: rem(21px) rem(41px);
         }
-
-        @include phones {}
 
         &:hover {
             background: #FFFFFF;
@@ -86,10 +56,7 @@ button {
                 color: $buttonColor;
             }
         }
-
     }
-
-
 }
 
 .section-title {
@@ -100,7 +67,6 @@ button {
     text-transform: uppercase;
     letter-spacing: rem(2px);
 }
-
 
 * {
     box-sizing: border-box;

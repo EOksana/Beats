@@ -18,7 +18,6 @@
 
         @include tablets {
             margin-top: rem(11px);
-            // max-width: rem(584px);
             padding: 0 10%;
 
         }
@@ -47,8 +46,6 @@
 
         @include phones {
             flex-direction: column;
-
-            // margin-bottom: rem(182px);
             gap: rem(31px);
         }
     }
@@ -61,14 +58,11 @@
         @include tablets {
             margin: 0;
             padding: 0 rem(10px) 0 rem(10px);
-
         }
 
         @include phones {
             display: flex;
             padding: 0 rem(10px) 0 rem(5px);
-
-
         }
 
         &:first-child {
@@ -115,7 +109,6 @@
         justify-content: center;
     }
 
-
     &__benefit-svg {
         width: 100%;
         height: 100%;
@@ -149,13 +142,10 @@
             min-width: rem(302px);
             margin-top: rem(6px);
             text-align: left;
-            // display: flex;
-            // justify-content: start;
         }
     }
 
     &__benefit-pic {
-        // position: relative;
         width: rem(128px);
         height: rem(128px);
         background: $bgGrey;
@@ -169,12 +159,6 @@
             display: flex;
             flex-direction: column;
             margin-left: rem(7px);
-            // margin-top: 65px;
-
-            // &:first-child {
-            //     margin-top: 0;
-            // }
-
         }
     }
 
@@ -190,7 +174,6 @@
         @include phones {
             font-size: 32px;
             line-height: 36px;
-            // margin-top: rem(15px);
         }
     }
 

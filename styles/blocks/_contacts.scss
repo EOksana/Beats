@@ -4,15 +4,15 @@
     &__address {
         font-family: 'Play';
         font-style: normal;
-        font-size: 18px;
+        font-size: rem(18px);
 
         @include tablets {
-            font-size: 21px;
-            line-height: 24px;
+            font-size: rem(21px);
+            line-height: rem(24px);
         }
 
         @include phones {
-            font-size: 18px;
+            font-size: rem(18px);
         }
     }
 
@@ -30,16 +30,6 @@
             color: $text;
             font-size: rem(16px);
         }
-
-        // &::before {
-        //     content: "";
-        //     background: url(../img/phone\ handset.png);
-        //     width: rem(13px);
-        //     height: rem(13px);
-        //     margin-right: rem(10px);
-        // }
-
-
     }
 
     &--header .contacts__phone {

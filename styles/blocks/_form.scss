@@ -3,14 +3,12 @@
     background: url("../img/bg.png") 90% 76% no-repeat;
     background-size: cover;
     color: #FFFFFF;
-
 }
 
 .container--order {
     display: flex;
     align-items: center;
 }
-
 
 .form {
     margin-top: 55px;
@@ -32,8 +30,6 @@
             justify-content: center;
             align-items: center;
         }
-
-        @include phones {}
     }
 
     &__col {
@@ -125,11 +121,9 @@
 
         @include phones {
             justify-content: space-evenly;
-            margin-left: 43px;
-            margin-top: 16px;
+            margin-left: rem(43px);
+            margin-top: rem(16px);
         }
-
-
     }
 
     &__button {
@@ -159,7 +153,6 @@
     @include tablets {
         margin: 0;
         margin-right: rem(18px);
-        // flex-wrap: wrap;
     }
 
     &__title {
@@ -201,15 +194,10 @@
         &--checkbox {
             border-radius: rem(3px);
 
-            @include tablets {
-                // margin-top: rem(19px);
-            }
-
             &::before {
                 background: url(../img/Vector\ \(5\).png)center center no-repeat;
             }
         }
-
     }
 
     &--checkbox {
@@ -220,8 +208,6 @@
 
     &__checkbox {
         border-radius: 0;
-
-
     }
 
 }

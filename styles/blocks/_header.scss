@@ -1,7 +1,8 @@
 .header {
     display: flex;
     align-items: center;
-    height: rem(64px);
+    // height: rem(64px);
+    padding-top: rem(25px);
 
     &__content {
         display: flex;
@@ -9,9 +10,17 @@
         justify-content: space-between;
         width: 100%;
     }
+
+    &__logo-color {
+        height: rem(40px);
+        width: rem(40px);
+        fill: $buttonColor;
+    }
 }
 
 .menu {
+    margin: 0 rem(30px);
+
     @include tablets {
         display: none;
     }
@@ -19,17 +28,22 @@
     @include phones {
         display: none;
     }
+
+    &__link {
+        white-space: nowrap;
+    }
 }
 
 .menu__list {
     display: flex;
     align-items: center;
-    gap: rem(27px);
-    // margin-right: 46px;
+    column-gap: rem(27px);
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .menu__item {
-    // margin-right: rem(27px);
     line-height: rem(30px);
     font-weight: 400;
     font-size: rem(18px);
@@ -38,8 +52,6 @@
         margin-right: 0;
     }
 }
-
-
 
 .container--header {
     display: flex;
