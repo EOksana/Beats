@@ -1016,7 +1016,7 @@ img {
   position: fixed;
   z-index: 1;
   top: 15.4375rem;
-  right: 13.75rem;
+  right: 5%;
 }
 @media (max-width: 768px) {
   .fixed-menu {
