@@ -1,50 +1,55 @@
 .header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    height: 64px;
+    // height: rem(64px);
+    padding-top: rem(25px);
 
     &__content {
         display: flex;
         align-items: center;
+        justify-content: space-between;
+        width: 100%;
     }
 
-    &__logo {
-        margin-right: 38px;
+    &__logo-color {
+        height: rem(40px);
+        width: rem(40px);
+        fill: $buttonColor;
+    }
+}
+
+.menu {
+    margin: 0 rem(30px);
+
+    @include tablets {
+        display: none;
     }
 
+    @include phones {
+        display: none;
+    }
+
+    &__link {
+        white-space: nowrap;
+    }
 }
 
 .menu__list {
     display: flex;
     align-items: center;
-    margin-right: 46px;
+    column-gap: rem(27px);
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .menu__item {
-    margin-right: 27px;
-    line-height: 30px;
+    line-height: rem(30px);
     font-weight: 400;
-    font-size: 18px;
+    font-size: rem(18px);
 
     &:last-child {
         margin-right: 0;
-    }
-}
-
-.contacts {
-    display: flex;
-    align-items: center;
-
-    &__icon {
-        width: 13px;
-        height: 13px;
-        margin-right: 10px;
-    }
-
-    &__phone {
-        font-size: 18px;
-        font-family: 'Play';
     }
 }
 

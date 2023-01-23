@@ -1,9 +1,8 @@
 .order {
     display: flex;
-    background: url(../img/bg.png) 90% 76% no-repeat;
+    background: url("../img/bg.png") 90% 76% no-repeat;
     background-size: cover;
     color: #FFFFFF;
-
 }
 
 .container--order {
@@ -11,13 +10,26 @@
     align-items: center;
 }
 
-
 .form {
     margin-top: 55px;
+
+    @include tablets {
+        margin-top: rem(20px);
+    }
+
+    @include phones {
+        margin-top: rem(28px);
+    }
 
     &__content {
         display: flex;
         justify-content: space-between;
+
+        @include tablets {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
 
     &__col {
@@ -26,12 +38,21 @@
         &--right {
             width: 48%;
         }
+
+        @include tablets {
+            width: 100%;
+            padding: 0 18%;
+        }
+
+        @include phones {
+            padding: 0;
+        }
     }
 
     &__row {
         display: flex;
 
-        margin-top: 12px;
+        margin-top: rem(12px);
 
         &:first-child {
             margin-bottom: 0;
@@ -40,10 +61,18 @@
 
     &__block {
         flex: 1;
-        margin-right: 12px;
+        margin-right: rem(12px);
+
+        @include tablets {
+            margin-right: 0;
+
+            &:not(:last-child) {
+                margin-right: rem(12px);
+            }
+        }
     }
 
-    &__title {
+    &__input-title {
         display: block;
         font-family: Play;
         line-height: 100%;
@@ -52,10 +81,14 @@
     &__input {
         width: 100%;
         border: none;
-        padding: 18px 12px;
-        border: solid 3px transparent;
-        border-radius: 4px;
-        margin-top: 6px;
+        padding: rem(18px) rem(12px);
+        border: solid rem(3px) transparent;
+        border-radius: rem(4px);
+        margin-top: rem(6px);
+
+        @include tablets {
+            padding: rem(8px) rem(9px);
+        }
 
         &:focus {
             border-color: #E01F3D;
@@ -64,23 +97,47 @@
     }
 
     &__input-textarea {
-        height: 152px;
+        height: rem(152px);
         width: 100%;
         resize: none;
+
+        @include tablets {
+            height: rem(82px);
+        }
     }
 
     &__controls {
         display: flex;
         flex-wrap: wrap;
-        margin-left: -16px;
-        margin-top: 10px;
+        margin-left: rem(-16px);
+        margin-top: rem(10px);
+
+        @include tablets {
+            margin-left: 0;
+            margin-right: rem(18px);
+            max-width: 80%;
+            margin-top: rem(22px);
+        }
+
+        @include phones {
+            justify-content: space-evenly;
+            margin-left: rem(43px);
+            margin-top: rem(16px);
+        }
     }
 
     &__button {
         display: flex;
-        gap: 15px;
-        margin-top: 48px;
-        margin-left: 474px;
+        gap: rem(15px);
+        margin-top: rem(48px);
+        margin-left: rem(474px);
+
+        @include tablets {
+            margin-left: 1.3rem;
+            margin-top: rem(40px);
+            justify-content: center;
+            // align-items: center;
+        }
     }
 
 }
@@ -90,11 +147,16 @@
     cursor: pointer;
     user-select: none;
     align-items: center;
-    margin-left: 16px;
-    margin-top: 19px;
+    margin-left: rem(16px);
+    margin-top: rem(19px);
+
+    @include tablets {
+        margin: 0;
+        margin-right: rem(18px);
+    }
 
     &__title {
-        margin-left: 10px;
+        margin-left: rem(10px);
         font-family: Play;
         display: block;
     }
@@ -111,16 +173,16 @@
 
     &__visible {
         position: relative;
-        width: 25px;
-        height: 25px;
+        width: rem(25px);
+        height: rem(25px);
         border-radius: 50%;
         background: #FFFFFF;
 
         &::before {
             content: "";
             position: absolute;
-            width: 13px;
-            height: 13px;
+            width: rem(13px);
+            height: rem(13px);
             background: #E01F3D;
             display: none;
             border-radius: 50%;
@@ -130,13 +192,18 @@
         }
 
         &--checkbox {
-            border-radius: 3px;
+            border-radius: rem(3px);
 
             &::before {
                 background: url(../img/Vector\ \(5\).png)center center no-repeat;
             }
         }
+    }
 
+    &--checkbox {
+        @include tablets {
+            margin-top: rem(19px);
+        }
     }
 
     &__checkbox {
@@ -145,7 +212,13 @@
 
 }
 
-.section-title {
+.section-title--order {
     display: flex;
     justify-content: center;
+    letter-spacing: 0;
+
+    @include phones {
+        font-size: rem(32px);
+        line-height: rem(36px);
+    }
 }
