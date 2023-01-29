@@ -1325,7 +1325,7 @@ img {
 }
 .products__content::before {
   content: "";
-  background: url("../../img/Ellipse 6.png");
+  background: url("../img/Ellipse 6.png");
   height: 28.25rem;
   width: 28.25rem;
   -ms-flex-item-align: end;
