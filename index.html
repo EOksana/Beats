@@ -60,6 +60,7 @@
                                         </div>
                                      </a>
                                 </div>
+                                <!-- hamburger--active -->
                                 <a href="#" class="hamburger">
                                     <span class="hamburger__plank"></span>
                                     <span class="hamburger__plank"></span>
@@ -162,6 +163,100 @@
                                     </div>
                                 </li>
                             </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="products section">
+                    <div class="container container--products">
+                        <div class="products__content">
+                            <a href="#" class="slider__arrow slider__arrow--left">
+                                <svg class="slider__scroll-left">
+                                    <use xlink:href="./img/sprite.svg#left"></use>
+                                </svg>
+                            </a>
+                            <ul class="slider products__slider">
+                                <li class="slider__item">
+                                    <button type="button" class="products__button dropdown">
+                                        <svg class="products__button-gear">
+                                            <use xlink:href="./img/sprite.svg#gear"></use>
+                                        </svg>
+                                        <div class="dropdown__menu">
+                                            <ul class="dropdown__list">
+                                                <li class="dropdown__item">
+                                                    <svg class="dropdown__img">
+                                                        <use xlink:href="./img/sprite.svg#bluetooth"></use>
+                                                    </svg>
+                                                    <div class="dropdown__text">Bluetooth</div>
+                                                    <div class="dropdown__data">4.0</div>
+                                                </li>
+                                                <li class="dropdown__item">
+                                                    <svg class="dropdown__img">
+                                                        <use xlink:href="./img/sprite.svg#range"></use>
+                                                    </svg>
+                                                    <div class="dropdown__text">Дальность </div>
+                                                    <div class="dropdown__data">12 м</div>
+                                                </li>
+                                                <li class="dropdown__item">
+                                                    <svg class="dropdown__img">
+                                                        <use xlink:href="./img/sprite.svg#charging-time"></use>
+                                                    </svg>
+                                                    <div class="dropdown__text">Зарядка</div>
+                                                    <div class="dropdown__data">3 ч</div>
+                                                </li>
+                                                <li class="dropdown__item">
+                                                    <svg class="dropdown__img">
+                                                        <use xlink:href="./img/sprite.svg#heft"></use>
+                                                    </svg>
+                                                    <div class="dropdown__text">Вес</div>
+                                                    <div class="dropdown__data">215гр</div>
+                                                </li>
+                                                <li class="dropdown__item">
+                                                    <svg class="dropdown__img">
+                                                        <use xlink:href="./img/sprite.svg#guarantee"></use>
+                                                    </svg>
+                                                    <div class="dropdown__text">Гарантия</div>
+                                                    <div class="dropdown__data">1 год</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </button>
+                                    <h2 class="section-title section-title--slider">
+                                        beats solo 3. цвет «атласное&nbsp;серебро»
+                                    </h2>
+                                    <p class="slider__item-description">
+                                        Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите их и поднесите к своему iPhone — они мгновенно подключатся к нему.
+                                    </p>
+                                    <div class="slider__item-charging">
+                                        <div class="charging">
+                                            Зарядка
+                                        </div>
+                                        <div class="charging__time">
+                                            2  часа
+                                        </div>
+                                    </div>
+                                    <div class="slider__item-weight">
+                                        <div class="weight">
+                                            Вес
+                                        </div>
+                                        <div class="weight__value">
+                                            215 грамм
+                                        </div>
+                                    </div>
+                                    <div class="slider__item-price">
+                                        <span>14 990 ₽</span>
+                                    </div>
+                                    <div class="slider__item-btn">
+                                        <button type="button" class="button slider__button">
+                                            заказать
+                                        </button>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="#" class="slider__arrow slider__arrow--right">
+                                <svg class="slider__scroll-right">
+                                    <use xlink:href="./img/sprite.svg#right"></use>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </section>
@@ -366,6 +461,35 @@
             </li>
         </ul>
     </nav>
+    <!-- popup--active -->
+    <div class="popup">
+        <nav class="menu menu--popup">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="#" class="menu__link">О нас</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Наушники</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Команда</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Цвета</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Отзывы</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Как мы работаем</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Контакты </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <script src="./burger.js"></script>
 </body>
 </html>
 

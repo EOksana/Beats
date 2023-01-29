@@ -16,18 +16,17 @@
         width: rem(40px);
         fill: $buttonColor;
     }
+
+    &__menu {
+        @include tablets {
+            display: none;
+        }
+    }
 }
 
 .menu {
     margin: 0 rem(30px);
 
-    @include tablets {
-        display: none;
-    }
-
-    @include phones {
-        display: none;
-    }
 
     &__link {
         white-space: nowrap;

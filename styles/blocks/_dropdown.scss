@@ -1,0 +1,37 @@
+.dropdown {
+    position: relative;
+
+    &:hover>.dropdown__menu {
+        display: block;
+    }
+}
+
+.dropdown__menu {
+    position: absolute;
+    display: none;
+    background: #FFFFFF 80%;
+    border-radius: rem(5px);
+    left: rem(93px);
+    top: 0;
+    width: rem(273px);
+    padding: rem(28px) rem(25px) rem(34px) rem(30px);
+    font-family: 'Play';
+}
+
+
+.dropdown__img {
+    width: rem(24px);
+    height: rem(24px);
+}
+
+.dropdown__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(18px);
+    justify-content: space-between;
+}
+
+.dropdown__item {
+    display: flex;
+    justify-content: space-between;
+}

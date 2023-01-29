@@ -25,39 +25,41 @@ button {
     cursor: pointer;
     padding: 0;
     background-color: transparent;
+}
 
 
-    &.button {
-        background-color: $buttonColor;
-        border-radius: rem(100px);
-        color: #FFFFFF;
-        font-weight: 700;
-        line-height: rem(18px);
-        padding: rem(18px) rem(41px);
-        letter-spacing: rem(2px);
-        transition: 0.4s;
+.button {
+    background-color: $buttonColor;
+    border-radius: rem(100px);
+    color: #FFFFFF;
+    font-weight: 700;
+    line-height: rem(18px);
+    padding: rem(18px) rem(41px);
+    letter-spacing: rem(2px);
+    transition: 0.4s;
 
-        @include tablets {
-            padding: rem(21px) rem(41px);
-        }
+    @include tablets {
+        padding: rem(21px) rem(41px);
+    }
+
+    &:hover {
+        background: #FFFFFF;
+        color: $buttonColor;
+    }
+
+    &--transparent {
+        background: transparent;
+        padding: 0;
+        font-family: Play;
 
         &:hover {
-            background: #FFFFFF;
-            color: $buttonColor;
-        }
-
-        &--transparent {
             background: transparent;
-            padding: 0;
-            font-family: Play;
-
-            &:hover {
-                background: transparent;
-                color: $buttonColor;
-            }
+            color: $buttonColor;
         }
     }
 }
+
+// }
 
 .section-title {
     font-family: 'Play';
