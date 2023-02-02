@@ -139,7 +139,7 @@
         }
 
         @include phones {
-            min-width: rem(302px);
+            // min-width: rem(302px);
             margin-top: rem(6px);
             text-align: left;
         }
