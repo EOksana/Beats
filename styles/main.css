@@ -1003,7 +1003,7 @@ img {
   border-radius: 0.1875rem;
 }
 .radio__visible--checkbox::before {
-  background: url(../../img/tick.png) center center no-repeat;
+  background: url(../img/tick.png) center center no-repeat;
 }
 @media (max-width: 768px) {
   .radio--checkbox {
