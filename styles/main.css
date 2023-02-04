@@ -561,6 +561,22 @@ img {
     margin-top: 1.25rem;
   }
 }
+.reviews__item {
+  display: none;
+}
+@media (max-width: 768px) {
+  .reviews__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.reviews__item--active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .reviews__display-inner {
   margin-top: 2rem;
   display: -webkit-box;
@@ -611,6 +627,13 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media (max-width: 768px) {
+  .reviews__avatar {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .reviews__avatar-top {
   -o-object-fit: cover;
@@ -980,7 +1003,7 @@ img {
   border-radius: 0.1875rem;
 }
 .radio__visible--checkbox::before {
-  background: url(../img/Vector\ \(5\).png) center center no-repeat;
+  background: url(../../img/tick.png) center center no-repeat;
 }
 @media (max-width: 768px) {
   .radio--checkbox {
@@ -1005,6 +1028,10 @@ img {
     font-size: 2rem;
     line-height: 2.25rem;
   }
+}
+
+.error {
+  border-color: #E01F3D;
 }
 
 .fixed-menu {
@@ -1320,26 +1347,6 @@ img {
 @media (max-width: 480px) {
   .products__content {
     margin-bottom: 2.625rem;
-  }
-}
-.products__content::before {
-  content: "";
-  background: url(../img/Ellipse\ 6.png);
-  height: 28.25rem;
-  width: 28.25rem;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  margin-bottom: 15px;
-}
-@media (max-width: 768px) {
-  .products__content::before {
-    height: 19.125rem;
-    width: 19.125rem;
-    margin-bottom: 0;
-    background-size: contain;
-    -ms-flex-item-align: unset;
-        -ms-grid-row-align: unset;
-        align-self: unset;
   }
 }
 .products__button {
@@ -1682,22 +1689,49 @@ img {
       -ms-flex-align: center;
           align-items: center;
 }
-
-.team {
-  height: 100vh;
+@media (max-width: 768px) {
+  .container--team {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .team__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 53px;
+  margin-top: 3.3125rem;
+}
+@media (max-width: 768px) {
+  .team__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 0.625rem;
+  }
+}
+@media (max-width: 480px) {
+  .team__list {
+    margin-top: 0;
+  }
 }
 .team__icon {
-  height: 290px;
-  width: 220px;
+  height: 18.125rem;
+  width: 13.75rem;
+}
+@media (max-width: 768px) {
+  .team__icon {
+    display: none;
+  }
 }
 .team__item {
-  margin-right: 20px;
+  margin-right: 1.25rem;
+}
+@media (max-width: 768px) {
+  .team__item {
+    margin-right: 0;
+  }
 }
 .team__item:last-child {
   margin-right: 0;
@@ -1710,22 +1744,82 @@ img {
   font-weight: 700;
   font-size: 18px;
   text-align: center;
-  margin-top: 25px;
+  margin-top: 1.5625rem;
   display: block;
 }
+@media (max-width: 768px) {
+  .team__name {
+    font-size: 1.125rem;
+    margin-top: 1.25rem;
+    line-height: 1.5625rem;
+  }
+}
+@media (max-width: 480px) {
+  .team__name {
+    margin-top: 0.4375rem;
+  }
+}
 .team__content {
-  padding-bottom: 63px;
+  padding-bottom: 3.9375rem;
+}
+@media (max-width: 768px) {
+  .team__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 0;
+    height: 80%;
+  }
+}
+@media (max-width: 480px) {
+  .team__content {
+    margin-top: 0px;
+    height: 93%;
+  }
 }
 .team__position {
-  margin-top: 11px;
+  position: relative;
+  margin-top: 0.6875rem;
   font-family: "Play";
 }
+@media (max-width: 480px) {
+  .team__position {
+    font-weight: 700;
+    font-size: 1.125rem;
+    margin-top: 1.125rem;
+  }
+}
 .team__description {
-  width: 220px;
-  margin-top: 4px;
+  position: relative;
+  width: 13.75rem;
+  margin-top: 0.25rem;
   text-align: center;
-  padding: 0 8px;
+  padding: 0 0.5rem;
   font-family: "Play";
+}
+@media (max-width: 480px) {
+  .team__description {
+    margin-top: 0.8125rem;
+  }
+}
+.team__icon--accordion {
+  display: none;
+}
+@media (max-width: 768px) {
+  .team__icon--accordion {
+    display: block;
+    margin-top: 0.9375rem;
+  }
+}
+@media (max-width: 480px) {
+  .team__icon--accordion {
+    width: 8.625rem;
+    height: 11.25rem;
+  }
 }
 
 .section-title--team {
@@ -1737,6 +1831,19 @@ img {
           justify-content: center;
   letter-spacing: 0;
 }
+@media (max-width: 768px) {
+  .section-title--team {
+    margin-top: 5.4375rem;
+    font-size: 3rem;
+    letter-spacing: 0;
+  }
+}
+@media (max-width: 480px) {
+  .section-title--team {
+    font-size: 2rem;
+    margin-bottom: 1.3125rem;
+  }
+}
 
 .accordion__head {
   display: -webkit-box;
@@ -1745,9 +1852,12 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-column-gap: 8px;
-     -moz-column-gap: 8px;
-          column-gap: 8px;
+  -webkit-column-gap: 0.5rem;
+     -moz-column-gap: 0.5rem;
+          column-gap: 0.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .accordion__head::after {
   content: "";
@@ -1755,9 +1865,16 @@ img {
   border-top: 9px solid #E01F3D;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.accordion {
+  position: relative;
 }
 
 .accordion__details {
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1770,4 +1887,79 @@ img {
           align-items: center;
   height: 0;
   overflow: hidden;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+@media (max-width: 768px) {
+  .accordion__details {
+    position: static;
+  }
+}
+
+.accordion--active > .accordion__details {
+  height: 6.25rem;
+}
+@media (max-width: 768px) {
+  .accordion--active > .accordion__details {
+    height: 25rem;
+  }
+}
+@media (max-width: 480px) {
+  .accordion--active > .accordion__details {
+    height: 18.75rem;
+  }
+}
+.accordion--active > .accordion__head::after {
+  content: "";
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin-bottom: 0.25rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.modal {
+  background-color: #FFFFFF;
+  width: 19.3125rem;
+  height: 11rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.modal__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 1.125rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.modal__title {
+  font-family: "Play";
+  font-size: 1.125rem;
+}
+.modal__button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.popup--modal {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }

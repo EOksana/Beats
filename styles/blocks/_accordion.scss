@@ -1,23 +1,55 @@
 .accordion__head {
     display: flex;
     justify-content: center;
-    column-gap: 8px;
+    column-gap: rem(8px);
+    align-items: center;
 
     &::after {
         content: "";
-        // position: absolute;
-        // right: -11%;
-        // top: 35%;
         border: 5px solid transparent;
         border-top: 9px solid $buttonColor;
         align-self: flex-end;
+        transition: 0.4s;
     }
 }
 
+.accordion {
+    position: relative;
+}
+
 .accordion__details {
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 0;
     overflow: hidden;
+    transition: 0.4s;
+
+    @include tablets {
+        position: static;
+    }
+}
+
+.accordion--active {
+    &>.accordion__details {
+        height: rem(100px);
+
+        @include tablets {
+            height: rem(400px);
+        }
+
+        @include phones {
+            height: rem(300px);
+        }
+    }
+
+    &>.accordion__head {
+        &::after {
+            content: "";
+            transform: rotate(180deg);
+            margin-bottom: rem(4px);
+            transition: 0.4s;
+        }
+    }
 }

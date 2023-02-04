@@ -195,7 +195,7 @@
             border-radius: rem(3px);
 
             &::before {
-                background: url(../img/Vector\ \(5\).png)center center no-repeat;
+                background: url(../../img/tick.png) center center no-repeat;
             }
         }
     }
@@ -221,4 +221,8 @@
         font-size: rem(32px);
         line-height: rem(36px);
     }
+}
+
+.error {
+    border-color: #E01F3D;
 }

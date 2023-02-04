@@ -17,22 +17,22 @@
             margin-bottom: rem(42px);
         }
 
-        &::before {
-            content: "";
-            background: url(../img/Ellipse\ 6.png);
-            height: rem(452px);
-            width: rem(452px);
-            align-self: flex-end;
-            margin-bottom: 15px;
+        // &::before {
+        //     content: "";
+        //     background: url(../img/Ellipse\ 6.png);
+        //     height: rem(452px);
+        //     width: rem(452px);
+        //     align-self: flex-end;
+        //     margin-bottom: 15px;
 
-            @include tablets {
-                height: rem(306px);
-                width: rem(306px);
-                margin-bottom: 0;
-                background-size: contain;
-                align-self: unset;
-            }
-        }
+        //     @include tablets {
+        //         height: rem(306px);
+        //         width: rem(306px);
+        //         margin-bottom: 0;
+        //         background-size: contain;
+        //         align-self: unset;
+        //     }
+        // }
     }
 
     &__button {

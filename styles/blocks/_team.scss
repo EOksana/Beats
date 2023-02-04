@@ -1,24 +1,48 @@
 .container--team {
     display: flex;
     align-items: center;
+
+
+
+    @include tablets {
+        justify-content: center;
+    }
+
+    @include phones {}
 }
 
 .team {
-    height: 100vh;
 
     &__list {
         display: flex;
-        margin-top: 53px;
+        margin-top: rem(53px);
+
+        @include tablets {
+            flex-direction: column;
+            margin-top: rem(10px);
+        }
+
+        @include phones {
+            margin-top: 0;
+        }
     }
 
     &__icon {
-        height: 290px;
-        width: 220px;
+        height: rem(290px);
+        width: rem(220px);
+
+        @include tablets {
+            display: none;
+        }
 
     }
 
     &__item {
-        margin-right: 20px;
+        margin-right: rem(20px);
+
+        @include tablets {
+            margin-right: 0;
+        }
 
         &:last-child {
             margin-right: 0;
@@ -35,42 +59,90 @@
         font-weight: 700;
         font-size: 18px;
         text-align: center;
-        margin-top: 25px;
+        margin-top: rem(25px);
         display: block;
 
-        // &::before {
-        //     content: "";
-        //     // position: absolute;
-        //     // right: -11%;
-        //     // top: 35%;
-        //     border: 5px solid transparent;
-        //     border-top: 9px solid $buttonColor;
-        // }
+        @include tablets {
+            font-size: rem(18px);
+            margin-top: rem(20px);
+            line-height: rem(25px);
+        }
+
+        @include phones {
+            margin-top: rem(7px);
+
+        }
     }
 
     &__content {
-        padding-bottom: 63px;
+        padding-bottom: rem(63px);
+
+        @include tablets {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 0;
+            height: 80%;
+        }
+
+        @include phones {
+            margin-top: 0px;
+            height: 93%;
+        }
     }
 
     &__position {
-        margin-top: 11px;
+        position: relative;
+        margin-top: rem(11px);
         font-family: 'Play';
+
+        @include phones {
+            font-weight: 700;
+            font-size: rem(18px);
+            margin-top: rem(18px);
+        }
     }
 
     &__description {
-        width: 220px;
-        margin-top: 4px;
+        position: relative;
+        width: rem(220px);
+        margin-top: rem(4px);
         text-align: center;
-        padding: 0 8px;
+        padding: 0 rem(8px);
         font-family: 'Play';
+
+        @include phones {
+            margin-top: rem(13px);
+        }
     }
 
+    &__icon--accordion {
+        display: none;
 
+        @include tablets {
+            display: block;
+            margin-top: rem(15px);
+        }
+
+        @include phones {
+            width: rem(138px);
+            height: rem(180px);
+        }
+    }
 }
 
 .section-title--team {
     display: flex;
     justify-content: center;
-    // margin-top: 73px;
     letter-spacing: 0;
+
+    @include tablets {
+        margin-top: rem(87px);
+        font-size: rem(48px);
+        letter-spacing: 0;
+    }
+
+    @include phones {
+        font-size: rem(32px);
+        margin-bottom: rem(21px);
+    }
 }
