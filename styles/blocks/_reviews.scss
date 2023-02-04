@@ -7,6 +7,18 @@
         }
     }
 
+    &__item {
+        display: none;
+
+        @include tablets {
+            flex-direction: column;
+        }
+
+        &--active {
+            display: flex;
+        }
+    }
+
     &__display-inner {
         margin-top: rem(32px);
         display: flex;
@@ -14,12 +26,16 @@
         padding: rem(42px) rem(107px) rem(42px) rem(42px);
         overflow: hidden;
         position: relative;
+        // min-width: rem(940px);
+        // min-height: rem(348px);
 
         @include tablets {
             padding: rem(56px) rem(23px) rem(15px);
             flex-direction: column;
             align-items: center;
             text-align: center;
+            // min-width: rem(724px);
+            // min-height: rem(418px);
         }
 
         @include phones {
@@ -46,12 +62,17 @@
 
     &__avatar {
         display: flex;
+
+        @include tablets {
+            justify-content: center;
+        }
     }
 
     &__avatar-top {
         object-fit: cover;
         width: rem(253px);
         height: rem(264px);
+
 
         @include tablets {
             width: rem(130px);

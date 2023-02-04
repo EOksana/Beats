@@ -16,21 +16,37 @@
         @include phones {
             margin-bottom: rem(42px);
         }
+    }
 
-        &::before {
-            content: "";
-            background: url(../img/Ellipse\ 6.png);
+    &__info {
+        display: flex;
+        width: 45%;
+        flex-wrap: wrap;
+
+        @include tablets {
+            justify-content: center;
+            margin-bottom: rem(30px);
+            width: 100%;
+        }
+    }
+
+    &__image {
+        display: flex;
+        align-items: center;
+
+        @include tablets {
+            display: flex;
+            justify-content: center;
+        }
+
+        &>img {
             height: rem(452px);
             width: rem(452px);
-            align-self: flex-end;
-            margin-bottom: 15px;
 
             @include tablets {
                 height: rem(306px);
                 width: rem(306px);
-                margin-bottom: 0;
-                background-size: contain;
-                align-self: unset;
+                object-fit: contain;
             }
         }
     }
@@ -79,19 +95,21 @@
 }
 
 .slider {
-    width: 45%;
-
-    @include tablets {
-        width: 100%;
-    }
+    // @include tablets {
+    //     width: 100%;
+    // }
 
     &__item {
         display: flex;
-        flex-wrap: wrap;
+        justify-content: space-between;
 
         @include tablets {
-            justify-content: center;
-            margin-bottom: rem(30px);
+            flex-direction: column;
+            row-gap: rem(49px);
+        }
+
+        @include phones {
+            row-gap: rem(26px);
         }
     }
 
@@ -181,6 +199,7 @@
         top: 47%;
         width: rem(24px);
         height: rem(40px);
+        z-index: 10;
 
         &>svg {
             width: 100%;
@@ -227,6 +246,7 @@
         font-size: rem(28px);
         line-height: rem(32px);
         margin-top: rem(34px);
+        text-align: center;
     }
 
     @include phones {
