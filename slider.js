@@ -1,10 +1,19 @@
 $(document).ready(function () {
-    $('.slider').slick({});
+    $('.owl-carousel').owlCarousel();
 });
 
-// const right = document.querySelector(".slider__arrow--left");
-
-$('.slider__arrow--right').on('click', function (event, slick, direction) {
-    console.log(direction);
-    // left
+const owl = $(".owl-carousel");
+owl.owlCarousel({
+    items: 1,
+    loop: true
 });
+
+$(".slider__arrow--right").click((event) => {
+    event.preventDefault();
+    owl.trigger("next.owl.carousel");
+})
+
+$(".slider__arrow--left").click((event) => {
+    event.preventDefault();
+    owl.trigger("prev.owl.carousel");
+})

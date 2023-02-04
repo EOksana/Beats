@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" href="./styles/main.css">
     <title>Beats</title>
 </head>
@@ -175,81 +174,167 @@
                                     <use xlink:href="./img/sprite.svg#left"></use>
                                 </svg>
                             </a>
-                            <ul class="slider products__slider">
+                            <ul class="slider products__slider owl-carousel">
                                 <li class="slider__item">
-                                    <button type="button" class="products__button dropdown">
-                                        <svg class="products__button-gear">
-                                            <use xlink:href="./img/sprite.svg#gear"></use>
-                                        </svg>
-                                        <div class="dropdown__menu">
-                                            <ul class="dropdown__list">
-                                                <li class="dropdown__item">
-                                                    <svg class="dropdown__img">
-                                                        <use xlink:href="./img/sprite.svg#bluetooth"></use>
-                                                    </svg>
-                                                    <div class="dropdown__text">Bluetooth</div>
-                                                    <div class="dropdown__data">4.0</div>
-                                                </li>
-                                                <li class="dropdown__item">
-                                                    <svg class="dropdown__img">
-                                                        <use xlink:href="./img/sprite.svg#range"></use>
-                                                    </svg>
-                                                    <div class="dropdown__text">Дальность </div>
-                                                    <div class="dropdown__data">12 м</div>
-                                                </li>
-                                                <li class="dropdown__item">
-                                                    <svg class="dropdown__img">
-                                                        <use xlink:href="./img/sprite.svg#charging-time"></use>
-                                                    </svg>
-                                                    <div class="dropdown__text">Зарядка</div>
-                                                    <div class="dropdown__data">3 ч</div>
-                                                </li>
-                                                <li class="dropdown__item">
-                                                    <svg class="dropdown__img">
-                                                        <use xlink:href="./img/sprite.svg#heft"></use>
-                                                    </svg>
-                                                    <div class="dropdown__text">Вес</div>
-                                                    <div class="dropdown__data">215гр</div>
-                                                </li>
-                                                <li class="dropdown__item">
-                                                    <svg class="dropdown__img">
-                                                        <use xlink:href="./img/sprite.svg#guarantee"></use>
-                                                    </svg>
-                                                    <div class="dropdown__text">Гарантия</div>
-                                                    <div class="dropdown__data">1 год</div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </button>
-                                    <h2 class="section-title section-title--slider">
-                                        beats solo 3. цвет «атласное&nbsp;серебро»
-                                    </h2>
-                                    <p class="slider__item-description">
-                                        Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите их и поднесите к своему iPhone — они мгновенно подключатся к нему.
-                                    </p>
-                                    <div class="slider__item-charging">
-                                        <div class="charging">
-                                            Зарядка
-                                        </div>
-                                        <div class="charging__time">
-                                            2  часа
-                                        </div>
+                                    <div class="products__image">
+                                        <img src="./img//Ellipse 6.png" alt="headsets">
                                     </div>
-                                    <div class="slider__item-weight">
-                                        <div class="weight">
-                                            Вес
-                                        </div>
-                                        <div class="weight__value">
-                                            215 грамм
-                                        </div>
-                                    </div>
-                                    <div class="slider__item-price">
-                                        <span>14 990 ₽</span>
-                                    </div>
-                                    <div class="slider__item-btn">
-                                        <button type="button" class="button slider__button">
-                                            заказать
+                                    <div class="products__info">
+                                        <button type="button" class="products__button dropdown">
+                                            <svg class="products__button-gear">
+                                                <use xlink:href="./img/sprite.svg#gear"></use>
+                                            </svg>
+                                            <div class="dropdown__menu">
+                                                <ul class="dropdown__list">
+                                                    <li class="dropdown__item">
+                                                        <svg class="dropdown__img">
+                                                            <use xlink:href="./img/sprite.svg#bluetooth"></use>
+                                                        </svg>
+                                                        <div class="dropdown__text">Bluetooth</div>
+                                                        <div class="dropdown__data">4.0</div>
+                                                    </li>
+                                                    <li class="dropdown__item">
+                                                        <svg class="dropdown__img">
+                                                            <use xlink:href="./img/sprite.svg#range"></use>
+                                                        </svg>
+                                                        <div class="dropdown__text">Дальность </div>
+                                                        <div class="dropdown__data">12 м</div>
+                                                    </li>
+                                                    <li class="dropdown__item">
+                                                        <svg class="dropdown__img">
+                                                            <use xlink:href="./img/sprite.svg#charging-time"></use>
+                                                        </svg>
+                                                        <div class="dropdown__text">Зарядка</div>
+                                                        <div class="dropdown__data">3 ч</div>
+                                                    </li>
+                                                    <li class="dropdown__item">
+                                                        <svg class="dropdown__img">
+                                                            <use xlink:href="./img/sprite.svg#heft"></use>
+                                                        </svg>
+                                                        <div class="dropdown__text">Вес</div>
+                                                        <div class="dropdown__data">215гр</div>
+                                                    </li>
+                                                    <li class="dropdown__item">
+                                                        <svg class="dropdown__img">
+                                                            <use xlink:href="./img/sprite.svg#guarantee"></use>
+                                                        </svg>
+                                                        <div class="dropdown__text">Гарантия</div>
+                                                        <div class="dropdown__data">1 год</div>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </button>
+                                        <h2 class="section-title section-title--slider">
+                                            beats solo 3. цвет «атласное&nbsp;серебро»
+                                        </h2>
+                                        <p class="slider__item-description">
+                                            Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите их и поднесите к своему iPhone — они мгновенно подключатся к нему.
+                                        </p>
+                                        <div class="slider__item-charging">
+                                            <div class="charging">
+                                                Зарядка
+                                            </div>
+                                            <div class="charging__time">
+                                                2  часа
+                                            </div>
+                                        </div>
+                                        <div class="slider__item-weight">
+                                            <div class="weight">
+                                                Вес
+                                            </div>
+                                            <div class="weight__value">
+                                                215 грамм
+                                            </div>
+                                        </div>
+                                        <div class="slider__item-price">
+                                            <span>14 990 ₽</span>
+                                        </div>
+                                        <div class="slider__item-btn">
+                                            <button type="button" class="button slider__button">
+                                                заказать
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="slider__item">
+                                    <div class="products__image">
+                                        <img src="./img/Ellipse red.png" alt="headsets">
+                                    </div>
+                                    <div class="products__info">
+                                        <button type="button" class="products__button dropdown">
+                                            <svg class="products__button-gear">
+                                                <use xlink:href="./img/sprite.svg#gear"></use>
+                                            </svg>
+                                            <div class="dropdown__menu">
+                                                <ul class="dropdown__list">
+                                                    <li class="dropdown__item">
+                                                        <svg class="dropdown__img">
+                                                            <use xlink:href="./img/sprite.svg#bluetooth"></use>
+                                                        </svg>
+                                                        <div class="dropdown__text">Bluetooth</div>
+                                                        <div class="dropdown__data">4.0</div>
+                                                    </li>
+                                                    <li class="dropdown__item">
+                                                        <svg class="dropdown__img">
+                                                            <use xlink:href="./img/sprite.svg#range"></use>
+                                                        </svg>
+                                                        <div class="dropdown__text">Дальность </div>
+                                                        <div class="dropdown__data">12 м</div>
+                                                    </li>
+                                                    <li class="dropdown__item">
+                                                        <svg class="dropdown__img">
+                                                            <use xlink:href="./img/sprite.svg#charging-time"></use>
+                                                        </svg>
+                                                        <div class="dropdown__text">Зарядка</div>
+                                                        <div class="dropdown__data">3 ч</div>
+                                                    </li>
+                                                    <li class="dropdown__item">
+                                                        <svg class="dropdown__img">
+                                                            <use xlink:href="./img/sprite.svg#heft"></use>
+                                                        </svg>
+                                                        <div class="dropdown__text">Вес</div>
+                                                        <div class="dropdown__data">215гр</div>
+                                                    </li>
+                                                    <li class="dropdown__item">
+                                                        <svg class="dropdown__img">
+                                                            <use xlink:href="./img/sprite.svg#guarantee"></use>
+                                                        </svg>
+                                                        <div class="dropdown__text">Гарантия</div>
+                                                        <div class="dropdown__data">1 год</div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </button>
+                                        <h2 class="section-title section-title--slider">
+                                            beats solo 3. цвет «атласное&nbsp;серебро»
+                                        </h2>
+                                        <p class="slider__item-description">
+                                            Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите их и поднесите к своему iPhone — они мгновенно подключатся к нему.
+                                        </p>
+                                        <div class="slider__item-charging">
+                                            <div class="charging">
+                                                Зарядка
+                                            </div>
+                                            <div class="charging__time">
+                                                2  часа
+                                            </div>
+                                        </div>
+                                        <div class="slider__item-weight">
+                                            <div class="weight">
+                                                Вес
+                                            </div>
+                                            <div class="weight__value">
+                                                215 грамм
+                                            </div>
+                                        </div>
+                                        <div class="slider__item-price">
+                                            <span>14 990 ₽</span>
+                                        </div>
+                                        <div class="slider__item-btn">
+                                            <button type="button" class="button slider__button">
+                                                заказать
+                                            </button>
+                                        </div>
                                     </div>
                                 </li>
                             </ul>
@@ -599,12 +684,8 @@
             </div>
         </div>
     </div>
-    <script
-        src="https://code.jquery.com/jquery-3.6.3.min.js"
-        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
-        crossorigin="anonymous">
-    </script>
-    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./owl.carousel.min.js"></script>
     <script src="./slider.js"></script>
     <script src="./burger.js"></script>
     <script src="./reviews.js"></script>
