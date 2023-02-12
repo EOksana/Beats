@@ -5,14 +5,15 @@
     right: 5%;
 
     @include tablets {
-        top: 32%;
-        right: 5%;
+        // top: 32%;
+        // right: 5%;
+        display: none;
     }
 
-    @include phones {
-        top: 32%;
-        right: 5%;
-    }
+    // @include phones {
+    //     top: 32%;
+    //     right: 5%;
+    // }
 
     &__item {
         margin-bottom: rem(15px);
@@ -38,6 +39,10 @@
                 transform: translate(-50%, -50%);
             }
         }
+    }
+
+    &__item--shadowed {
+        background-color: #fff;
     }
 
     &__link {

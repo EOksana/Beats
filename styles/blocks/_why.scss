@@ -4,6 +4,27 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
+
+    &__rectangle-svg {
+        position: absolute;
+        width: rem(47px);
+        height: rem(47px);
+        top: rem(-19px);
+        right: rem(122px);
+
+        @include phones {
+            right: rem(45px);
+        }
+    }
+
+    &__redtangle-svg {
+        position: absolute;
+        width: rem(47px);
+        height: rem(47px);
+        bottom: rem(-29px);
+        left: rem(56px);
+    }
 
     &__subtitle {
         font-family: 'Play';
@@ -82,6 +103,7 @@
                         content: "";
                         position: absolute;
                         background: url(../img/Combined\ shape\ 2204.png);
+                        background-repeat: no-repeat;
                         width: rem(70px);
                         height: rem(24px);
                         right: -25%;
@@ -93,6 +115,7 @@
                         content: "";
                         position: absolute;
                         background: url(../img/Combined\ shape\ 2204.png);
+                        background-repeat: no-repeat;
                         width: rem(70px);
                         height: rem(24px);
                         left: -25%;
@@ -112,6 +135,12 @@
     &__benefit-svg {
         width: 100%;
         height: 100%;
+
+        // @include phones {
+        //     width: 56px;
+        //     height: 60px;
+        //     display: flex;
+        // }
     }
 
     &__benefit-title {
@@ -151,6 +180,13 @@
         background: $bgGrey;
         border-radius: 50%;
         max-height: 100%;
+
+        // @include phones {
+        //     display: flex;
+        //     align-items: center;
+        //     justify-content: center;
+        // }
+
     }
 
     &__benefits-content {
@@ -166,6 +202,7 @@
     .section-title--why {
         display: flex;
         justify-content: center;
+        letter-spacing: 0;
 
         @include tablets {
             letter-spacing: 0;
@@ -180,5 +217,9 @@
     .container--why {
         display: flex;
         align-items: center;
+
+        @include phones {
+            justify-content: center;
+        }
     }
 }
