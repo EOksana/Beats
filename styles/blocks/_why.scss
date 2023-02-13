@@ -137,18 +137,20 @@
         display: flex;
         justify-content: center;
 
-        @include small-phones {
+        @include phones {
             align-items: center;
         }
     }
 
     &__benefit-svg {
-        width: 100%;
-        height: 100%;
+        // width: 30%;
+        // height: 50%;
+        // width: 46%;
+        // height: 50%;
 
         @include small-phones {
-            width: rem(80px);
-            height: rem(80px);
+            width: rem(60px);
+            height: rem(60px);
             display: flex;
         }
     }
@@ -184,12 +186,19 @@
     }
 
     &__benefit-pic {
-        width: rem(128px);
-        height: rem(128px);
-        background: $bgGrey;
+        // width: rem(128px);
+        // height: rem(128px);
+        // background: $bgGrey;
+        // border-radius: 50%;
+        // max-height: 100%;
+        // display: inline-block;
+        height: 125px;
+        width: 125px;
         border-radius: 50%;
-        max-height: 100%;
-        display: inline-block;
+        background-color: $bgGrey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         @include small-phones {
             width: rem(112px);

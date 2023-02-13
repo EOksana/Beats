@@ -35,7 +35,6 @@
 .menu__list {
     display: flex;
     align-items: center;
-    column-gap: rem(27px);
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
@@ -45,6 +44,7 @@
     line-height: rem(30px);
     font-weight: 400;
     font-size: rem(18px);
+    margin-right: rem(27px);
 
     &:last-child {
         margin-right: 0;

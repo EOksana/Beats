@@ -20,10 +20,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: rem(20px);
 
     &>.menu__item {
         font-size: rem(36px);
         font-family: 'Play';
+        margin-top: 20px;
     }
 }

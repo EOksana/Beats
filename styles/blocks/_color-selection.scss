@@ -28,6 +28,10 @@
             margin-left: rem(10px);
             font-size: rem(32px);
         }
+
+        @include small-phones {
+            font-size: rem(24px);
+        }
     }
 
     &__content {

@@ -34,15 +34,32 @@
         @include phones {
             flex-direction: column;
             justify-content: center;
-            gap: rem(19px);
+            margin-top: rem(19px);
+        }
+    }
+
+    &__social-item {
+        margin-right: rem(10px);
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        @include phones {
+            margin-top: rem(19px);
         }
     }
 
     &__social-icon {
-        width: 30px;
-        height: 30px;
+        width: rem(30px);
+        height: rem(30px);
         fill: #B3B3B3;
         transition: fill 0.4s;
+        margin-right: rem(10px);
+
+        &:last-child {
+            margin-right: 0;
+        }
 
         @include tablets {
             width: rem(32px);
@@ -52,7 +69,6 @@
         @include phones {
             width: rem(24px);
             height: rem(24px);
-            gap: rem(14px);
         }
 
         &:hover {
@@ -62,7 +78,6 @@
 
     &__social-list {
         display: flex;
-        gap: rem(10px);
     }
 }
 

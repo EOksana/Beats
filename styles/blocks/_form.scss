@@ -120,7 +120,7 @@
         }
 
         @include phones {
-            justify-content: space-evenly;
+            justify-content: initial;
             margin-left: rem(43px);
             margin-top: rem(16px);
         }
@@ -202,6 +202,10 @@
         @include tablets {
             margin-top: rem(19px);
         }
+
+        @include phones {
+            margin-top: rem(7px);
+        }
     }
 
     &__checkbox {
@@ -217,6 +221,10 @@
     @include phones {
         font-size: rem(32px);
         line-height: rem(36px);
+    }
+
+    @include small-phones {
+        font-size: rem(28px);
     }
 }
 
