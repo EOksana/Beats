@@ -19,3 +19,9 @@
         @content;
     }
 }
+
+@mixin small-phones {
+    @media (max-width: $small-phones) {
+        @content;
+    }
+}

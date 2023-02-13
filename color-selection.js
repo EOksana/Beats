@@ -2,6 +2,7 @@ const item = document.querySelectorAll('.color-selection__item');
 
 for (let index = 0; index < item.length; index++) {
     const element = item[index]
+
     element.addEventListener('click', e => {
         e.preventDefault()
         if (e.target.classList.contains('color-selection__description')) return
@@ -21,8 +22,3 @@ for (let index = 0; index < item.length; index++) {
 
     })
 }
-// item.addEventListener("click", () => {
-//     item.classList.toggle("color-selection__item--active");
-// })
-
-

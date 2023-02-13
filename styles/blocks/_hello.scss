@@ -1,5 +1,6 @@
 .hello {
     background: $bgGrey;
+    height: 100vh;
 
     &__description {
         display: flex;
@@ -20,7 +21,11 @@
             line-height: rem(20px);
             max-width: 72%;
             margin-top: rem(10px);
-            // height: 100%;
+        }
+
+        @include small-phones {
+            margin-top: rem(15px);
+            font-size: rem(16px)
         }
     }
 
@@ -33,6 +38,10 @@
 
         @include phones {
             margin-top: rem(26px);
+        }
+
+        @include small-phones {
+            margin-top: rem(15px);
         }
     }
 
@@ -47,6 +56,7 @@
             align-items: center;
             margin-top: 0.87rem;
 
+
             &::before {
                 content: '';
                 background: url("../img/headsets.png");
@@ -55,6 +65,16 @@
                 height: rem(323px);
             }
 
+        }
+
+        @include small-phones {
+            margin-bottom: 59px;
+
+            &::before {
+                content: '';
+                width: rem(306px);
+                height: rem(306px);
+            }
         }
 
         &::after {
@@ -124,6 +144,12 @@
         font-size: rem(32px);
         line-height: rem(36px);
         margin-top: rem(46px);
+        max-width: 70%;
+    }
+
+    @include small-phones {
+        font-size: rem(28px);
+        margin-top: rem(20px);
         max-width: 70%;
     }
 }

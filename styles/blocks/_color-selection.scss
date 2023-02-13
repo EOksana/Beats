@@ -5,6 +5,10 @@
     background-size: auto;
     color: #FFFFFF;
 
+    @include tablets {
+        background-size: cover;
+    }
+
     &__title {
         font-family: Play;
         font-weight: 700;
@@ -64,22 +68,14 @@
 
     &__subtitle--silver {
         background: #999999;
-
-
-
     }
 
     &__subtitle--black {
         background-color: #151515;
-        // width: 102px;
-
-
     }
 
     &__subtitle--red {
         background-color: #E01F3C;
-        // width: 102px;
-
     }
 
     &__description {
@@ -91,18 +87,9 @@
 
 }
 
-// .color-selection__item>.color-selection__description {
-//     width: 524px;
-// padding: 20px;
-// box-sizing: border-box;
-// opacity: 1;
-// z-index: 10;
-// }
-
 .color-selection__item_active>.color-selection__description {
-    width: 524px;
+    width: rem(524px);
     opacity: 1;
-    // z-index: 10;
     background-color: rgba(51, 53, 55, 0.9);
     padding: 31px 53px 0 38px;
     transition: 0.3s;
@@ -112,8 +99,13 @@
     }
 }
 
-// .color-selection__item--active {
-//     width: 100%;
-//     z-index: 11;
-//     position: relative;
-// }
+.color-selection__item_active {
+
+    @include phones {
+        width: 100vw;
+        position: sticky;
+        left: 0;
+        right: 0px;
+        z-index: 90;
+    }
+}

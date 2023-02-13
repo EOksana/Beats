@@ -11,7 +11,7 @@
 }
 
 .form {
-    margin-top: 55px;
+    margin-top: rem(55px);
 
     @include tablets {
         margin-top: rem(20px);
@@ -136,10 +136,8 @@
             margin-left: 1.3rem;
             margin-top: rem(40px);
             justify-content: center;
-            // align-items: center;
         }
     }
-
 }
 
 .radio {
@@ -209,7 +207,6 @@
     &__checkbox {
         border-radius: 0;
     }
-
 }
 
 .section-title--order {

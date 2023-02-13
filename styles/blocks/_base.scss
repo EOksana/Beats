@@ -9,10 +9,6 @@ html {
 
 .section {
     height: 100vh;
-
-    // @include phones {
-    //     height: 100%;
-    // }
 }
 
 body {
@@ -131,7 +127,6 @@ img {
 
 .maincontent {
     height: 100%;
-    // transform: translateY(0);
     transition: transform 1s;
     // will-change: transform;
 

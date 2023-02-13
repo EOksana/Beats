@@ -20,25 +20,25 @@
     &--active {
         z-index: 10000;
         position: relative;
-        margin-right: 20px;
+        margin-right: rem(20px);
 
         &>.hamburger__plank {
             background: #FFFFFF;
             position: absolute;
-            width: 30px;
+            width: rem(30px);
 
             &:nth-child(2) {
                 display: none;
             }
 
             &:nth-child(1) {
-                top: 10px;
+                top: rem(10px);
                 transform: rotate(45deg);
             }
 
             &:nth-child(3) {
                 transform: rotate(-45deg);
-                top: 10px;
+                top: rem(10px);
             }
         }
     }

@@ -6,8 +6,8 @@
 
     &::after {
         content: "";
-        border: 5px solid transparent;
-        border-top: 9px solid $buttonColor;
+        border: rem(5px) solid transparent;
+        border-top: rem(9px) solid $buttonColor;
         align-self: flex-end;
         transition: 0.4s;
     }

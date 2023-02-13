@@ -1,7 +1,6 @@
 .products {
     background: $bgGrey;
-
-
+    height: 100vh;
 
     &__content {
         position: relative;
@@ -41,6 +40,7 @@
             justify-content: center;
         }
 
+
         &>img {
             height: rem(452px);
             width: rem(452px);
@@ -49,6 +49,11 @@
                 height: rem(306px);
                 width: rem(306px);
                 object-fit: contain;
+            }
+
+            @include small-phones {
+                height: rem(280px);
+                width: rem(280px);
             }
         }
     }
@@ -77,7 +82,7 @@
         }
 
         @include phones {
-            margin-top: 26px;
+            margin-top: rem(26px);
         }
     }
 }
@@ -97,9 +102,6 @@
 }
 
 .slider {
-    // @include tablets {
-    //     width: 100%;
-    // }
 
     &__item {
         display: flex;
@@ -112,6 +114,12 @@
 
         @include phones {
             row-gap: rem(26px);
+            margin-top: rem(41px);
+        }
+
+        @include small-phones {
+            row-gap: rem(15px);
+            margin-top: rem(90px);
         }
     }
 
@@ -124,6 +132,10 @@
             padding-right: 0;
             margin-top: rem(14px);
             text-align: center;
+        }
+
+        @include small-phones {
+            font-size: rem(14px);
         }
     }
 
@@ -144,6 +156,10 @@
         @include phones {
             margin-top: rem(23px);
         }
+
+        @include small-phones {
+            margin-top: rem(15px);
+        }
     }
 
     &__item-weight {
@@ -161,6 +177,10 @@
 
         @include phones {
             margin-top: rem(23px);
+        }
+
+        @include small-phones {
+            margin-top: rem(15px);
         }
     }
 
@@ -192,7 +212,7 @@
         }
 
         @include phones {
-            margin-left: rem(28px);
+            margin-left: rem(18px);
         }
     }
 
@@ -220,6 +240,11 @@
                 left: rem(-38px);
                 top: rem(128px);
             }
+
+            @include small-phones {
+                left: rem(-20px);
+                top: rem(228px);
+            }
         }
 
         &--right {
@@ -233,6 +258,11 @@
             @include phones {
                 right: rem(-37px);
                 top: rem(129px);
+            }
+
+            @include small-phones {
+                right: rem(-20px);
+                top: rem(229px);
             }
         }
     }
@@ -254,6 +284,11 @@
     @include phones {
         text-align: center;
         margin-top: 0;
+    }
+
+    @include small-phones {
+        font-size: rem(24px);
+        margin-top: rem(15px);
     }
 }
 

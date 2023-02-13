@@ -7,9 +7,14 @@
         left: 0;
         left: 67%;
         height: 10px;
-        width: 3px;
+        width: rem(3px);
         background-color: #f00;
         transform: translateX(-70%) rotate(45deg);
+
+        @include phones {
+            height: rem(7px);
+            width: rem(2px);
+        }
     }
 
     ::after {
@@ -17,10 +22,15 @@
         position: absolute;
         right: 40%;
         margin: 0 auto;
-        height: 10px;
-        width: 3px;
+        height: rem(10px);
+        width: rem(3px);
         background-color: #f00;
         transform: translateX(70%) rotate(-45deg);
+
+        @include phones {
+            height: rem(7px);
+            width: rem(2px);
+        }
     }
 }
 
@@ -38,6 +48,10 @@
         height: rem(47px);
         top: rem(-16px);
         left: rem(80px);
+
+        @include small-phones {
+            left: rem(40px);
+        }
     }
 
     &__hexagon-svg {
@@ -48,19 +62,19 @@
         right: rem(99px);
 
         @include phones {
-            right: 47px;
+            right: rem(47px);
         }
     }
 
     &__title {
         font-family: "Play";
         font-weight: 700;
-        font-size: 48px;
-        line-height: 52px;
+        font-size: rem(48px);
+        line-height: rem(52px);
         text-transform: uppercase;
 
         @include phones {
-            font-size: 32px;
+            font-size: rem(32px);
         }
     }
 }
@@ -70,10 +84,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-bottom: 52px;
+    padding-bottom: rem(52px);
 
     @include tablets {
-        padding-bottom: 14px;
+        padding-bottom: rem(14px);
     }
 
     @include tablets {
@@ -82,17 +96,17 @@
 }
 
 .player {
-    margin-top: 47px;
+    margin-top: rem(47px);
     width: 70%;
 
     @include tablets {
-        margin-top: 36px;
+        margin-top: rem(36px);
         width: 81%;
 
     }
 
     @include phones {
-        margin-top: 14px;
+        margin-top: rem(14px);
         width: 86%;
 
     }
@@ -101,14 +115,14 @@
         position: relative;
         background-color: #3e3e3e;
         width: 100%;
-        height: 356px;
+        height: rem(356px);
 
         @include tablets {
-            height: 320px;
+            height: rem(320px);
         }
 
         @include phones {
-            height: 223px;
+            height: rem(223px);
         }
     }
 
@@ -128,17 +142,17 @@
     }
 
     &__splash-play {
-        width: 48px;
-        height: 71px;
+        width: rem(48px);
+        height: rem(71px);
 
         @include tablets {
-            width: 67px;
-            height: 98px;
+            width: rem(67px);
+            height: rem(98px);
         }
 
         @include tablets {
-            width: 45px;
-            height: 66px;
+            width: rem(45px);
+            height: rem(66px);
         }
     }
 
@@ -151,24 +165,24 @@
         justify-content: space-around;
 
         @include phones {
-            padding: 4px 10px 4px;
+            padding: rem(4px) rem(10px) rem(4px);
         }
     }
 
     &__splash-play--start {
-        width: 12px;
-        height: 17px;
+        width: rem(12px);
+        height: rem(17px);
 
         @include phones {
-            width: 7px;
-            height: 10px;
+            width: rem(7px);
+            height: rem(10px);
         }
 
     }
 
     &__line {
         position: relative;
-        height: 4px;
+        height: rem(4px);
         padding: 0;
         width: 100%;
         margin-left: rem(10px);
@@ -181,26 +195,26 @@
         position: absolute;
         border: none;
         outline: none;
-        width: 13px;
-        height: 13px;
+        width: rem(13px);
+        height: rem(13px);
         border-radius: 50%;
         left: 0;
-        top: -4px;
+        top: rem(-4px);
         background: #626262;
 
         @include phones {
-            width: 10px;
-            height: 10px;
+            width: rem(10px);
+            height: rem(10px);
         }
     }
 
     &__splash-sound {
-        width: 13px;
-        height: 16px;
+        width: rem(13px);
+        height: rem(16px);
 
         @include phones {
-            width: 7px;
-            height: 10px;
+            width: rem(7px);
+            height: rem(10px);
         }
     }
 
@@ -217,13 +231,13 @@
         display: flex;
 
         @include phones {
-            width: 52%;
+            width: 45%;
         }
     }
 
     &__line {
         position: relative;
-        height: 4px;
+        height: rem(4px);
         padding: 0;
         width: 100%;
         margin-left: rem(10px);
@@ -235,10 +249,10 @@
         // display: flex;
         color: #fff;
         font-family: "Play";
-        font-size: 14px;
+        font-size: rem(14px);
 
         @include phones {
-            font-size: 10px;
+            font-size: rem(10px);
         }
 
     }
@@ -264,29 +278,16 @@
         height: 100%;
         background: #fff;
 
-        // @include phones {
-        //     width: 3px;
-        //     height: 70%;
-        //     top: 20%;
-        //     left: 20%;
-        // }
     }
 
     &::before {
         content: "";
         display: block;
         position: absolute;
-        // right: 0;
-        width: 5px;
+        width: rem(5px);
         height: 100%;
         background: #fff;
 
-        // @include phones {
-        //     right: 20%;
-        //     top: 20%;
-        //     height: 70%;
-        //     width: 3px;
-        // }
     }
 }
 
@@ -298,8 +299,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 15px;
-    width: 15px;
+    height: rem(15px);
+    width: rem(15px);
 }
 
 .player.active .player__main-btn {
@@ -308,7 +309,7 @@
     &::after {
         content: "";
         display: block;
-        width: 5px;
+        width: rem(5px);
         height: 100%;
         background: #fff;
     }
@@ -316,7 +317,7 @@
     &::before {
         content: "";
         display: block;
-        width: 5px;
+        width: rem(5px);
         height: 100%;
         background: #fff;
     }
@@ -325,8 +326,6 @@
 .player.active .player__splash-play--start {
     display: none;
 }
-
-
 
 #yt-player {
     width: 100%;

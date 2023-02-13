@@ -99,7 +99,6 @@ setTimeout(() => {
     const volBarWidth = parseInt(volBarStyle.width);
 
     const posVolumePercent = (posVolBtn / volBarWidth) * 100;
-    // console.log(posVolumePercent);
     player.setVolume(posVolumePercent);
 
     if (!posVolumePercent) {
