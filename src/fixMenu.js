@@ -3,6 +3,7 @@ const display = $(".maincontent");
 const sideMenu = $(".fixed-menu");
 const menuItems = sideMenu.find(".fixed-menu__item");
 
+
 const md = new MobileDetect(window.navigator.userAgent);
 const isMobile = md.mobile();
 
@@ -16,13 +17,13 @@ const countSectionPosition = (sectionEq) => {
 
 const changeMenuThemeForSetion = (sectionEq) => {
     const currentSection = sections.eq(sectionEq);
-    const menuTheme = currentSection.attr("data-sidemenu theme");
-    const activeClass = "fixed-menu--shadowed";
+    const menuTheme = currentSection.attr("data-sidemenu-theme");
+    const activeClass = "fixed-menu__item--shadowed";
 
     if (menuTheme === "white") {
-        sideMenu.addClass(activeClass);
+        menuItems.addClass(activeClass);
     } else {
-        sideMenu.removeClass(activeClass);
+        menuItems.removeClass(activeClass);
     }
 };
 
@@ -40,8 +41,6 @@ const performTransition = (sectionEq) => {
 
     const position = countSectionPosition(sectionEq);
 
-    changeMenuThemeForSetion(sectionEq);
-
     display.css({
         transform: `translateY(${position}vh)`
     });
@@ -52,6 +51,10 @@ const performTransition = (sectionEq) => {
         inScroll = false;
         resetActiveClassForItem(menuItems, sectionEq, "fixed-menu__item--active")
     }, tracsitionOver + mouseInertiaOver);
+
+    setTimeout(() => {
+        changeMenuThemeForSetion(sectionEq);
+    }, (tracsitionOver + mouseInertiaOver) / 3)
 };
 
 const scrollViewport = direction => {
@@ -84,7 +87,7 @@ $(window).on("wheel", e => {
 $(window).on("keydown", e => {
     const tagName = e.target.tagName.toLowerCase();
 
-    if (tagName !== "inut" && tagName !== "textarea") {
+    if (tagName !== "input" && tagName !== "textarea") {
         switch (e.keyCode) {
             case 38://prev
                 scrollViewport("prev");
@@ -100,12 +103,27 @@ $(window).on("keydown", e => {
 
 $(".wrapper").on("touchmove", e => e.preventDefault());
 
+const closePopup = () => {
+    const burger = $(".hamburger");
+    const popup = $(".popup");
+    const burgerIsActive = burger.hasClass("hamburger--active");
+    const popupIsActive = popup.hasClass("popup--active");
+
+    if (burgerIsActive && popupIsActive) {
+        burger.removeClass("hamburger--active");
+        popup.removeClass("popup--active");
+    }
+}
+
 $("[data-scroll-to]").click(e => {
+
     e.preventDefault();
 
     const $this = $(e.currentTarget);
     const target = $this.attr("data-scroll-to");
     const reqSection = $(`[data-section-id=${target}]`);
+
+    closePopup();
 
     performTransition(reqSection.index());
 });

@@ -119,6 +119,10 @@
             margin-top: rem(12px);
         }
 
+        @include small-phones {
+            font-size: rem(14px);
+        }
+
     }
 
     &__content-name {

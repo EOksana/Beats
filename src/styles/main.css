@@ -1198,6 +1198,9 @@ img {
 .fixed-menu__item--shadowed {
   background-color: #fff;
 }
+.fixed-menu__item--shadowed:before {
+  border: 0.0625rem solid #fff;
+}
 .fixed-menu__link {
   width: 0.375rem;
   height: 0.375rem;

@@ -36,6 +36,10 @@
 
     &__item--shadowed {
         background-color: #fff;
+
+        &:before {
+            border: rem(1px) solid #fff;
+        }
     }
 
     &__link {
