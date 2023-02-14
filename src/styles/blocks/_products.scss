@@ -1,0 +1,305 @@
+.products {
+    background: $bgGrey;
+    height: 100vh;
+
+    &__content {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        width: 97%;
+
+        @include tablets {
+            flex-direction: column;
+            align-items: center;
+            width: 85%;
+        }
+
+        @include phones {
+            margin-bottom: rem(42px);
+        }
+    }
+
+    &__info {
+        display: flex;
+        width: 47%;
+        flex-wrap: wrap;
+
+        @include tablets {
+            justify-content: center;
+            margin-bottom: rem(30px);
+            width: 100%;
+        }
+    }
+
+    &__image {
+        display: flex;
+        align-items: center;
+
+        @include tablets {
+            display: flex;
+            justify-content: center;
+        }
+
+
+        &>img {
+            height: rem(452px);
+            width: rem(452px);
+
+            @include tablets {
+                height: rem(306px);
+                width: rem(306px);
+                object-fit: contain;
+            }
+
+            @include small-phones {
+                height: rem(280px);
+                width: rem(280px);
+            }
+        }
+    }
+
+    &__button {
+        background: #9A9A9A;
+        border-radius: rem(4px);
+        padding: rem(24px) rem(25px);
+
+        @include tablets {
+            display: none;
+        }
+
+        &-gear {
+            width: rem(42px);
+            height: rem(42px);
+        }
+    }
+
+    &__slider {
+        padding-left: rem(12px);
+        padding-bottom: rem(50px);
+
+        @include tablets {
+            padding: 0;
+        }
+
+        @include phones {
+            margin-top: rem(26px);
+        }
+    }
+}
+
+.container--products {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    @include tablets {
+        justify-content: center;
+    }
+
+    @include phones {
+        width: 98%;
+    }
+}
+
+.slider {
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+
+        @include tablets {
+            flex-direction: column;
+            row-gap: rem(49px);
+        }
+
+        @include phones {
+            row-gap: rem(26px);
+            margin-top: rem(41px);
+        }
+
+        @include small-phones {
+            row-gap: rem(15px);
+            margin-top: rem(90px);
+        }
+    }
+
+    &__item-description {
+        font-family: 'Play';
+        margin-top: rem(24px);
+        padding-right: 10%;
+
+        @include tablets {
+            padding-right: 0;
+            margin-top: rem(14px);
+            text-align: center;
+        }
+
+        @include small-phones {
+            font-size: rem(14px);
+        }
+    }
+
+    &__item-charging {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Play';
+        margin-top: rem(33px);
+        width: 38%;
+
+
+        @include tablets {
+            padding-right: rem(68px);
+            align-items: flex-end;
+            width: 50%;
+        }
+
+        @include phones {
+            margin-top: rem(23px);
+        }
+
+        @include small-phones {
+            margin-top: rem(15px);
+        }
+    }
+
+    &__item-weight {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Play';
+        margin-top: rem(33px);
+        width: 38%;
+
+
+        @include tablets {
+            padding-left: rem(22px);
+            width: 50%;
+        }
+
+        @include phones {
+            margin-top: rem(23px);
+        }
+
+        @include small-phones {
+            margin-top: rem(15px);
+        }
+    }
+
+    &__item-price {
+        font-family: 'Play';
+        font-size: rem(36px);
+        line-height: rem(60px);
+        margin-top: rem(24px);
+
+        @include tablets {
+            font-size: rem(40px);
+        }
+
+        @include phones {
+            font-size: rem(32px);
+        }
+    }
+
+    &__button {
+        margin-top: rem(24px);
+        margin-left: rem(14px);
+        font-size: rem(18px);
+        font-family: 'Play';
+        padding: rem(21px) rem(41px);
+        letter-spacing: 0;
+
+        @include tablets {
+            margin-left: rem(40px);
+        }
+
+        @include phones {
+            margin-left: rem(18px);
+        }
+    }
+
+    &__arrow {
+        position: absolute;
+        top: 47%;
+        width: rem(24px);
+        height: rem(40px);
+        z-index: 10;
+
+        &>svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        &--left {
+            left: rem(-49px);
+
+            @include tablets {
+                left: rem(75px);
+                top: rem(143px);
+            }
+
+            @include phones {
+                left: rem(-38px);
+                top: rem(128px);
+            }
+
+            @include small-phones {
+                left: rem(-20px);
+                top: rem(228px);
+            }
+        }
+
+        &--right {
+            right: rem(-25px);
+
+            @include tablets {
+                right: rem(79px);
+                top: rem(145px);
+            }
+
+            @include phones {
+                right: rem(-37px);
+                top: rem(129px);
+            }
+
+            @include small-phones {
+                right: rem(-20px);
+                top: rem(229px);
+            }
+        }
+    }
+}
+
+.section-title--slider {
+    font-size: rem(36px);
+    line-height: rem(42px);
+    letter-spacing: 0;
+    margin-top: rem(25px);
+
+    @include tablets {
+        font-size: rem(28px);
+        line-height: rem(32px);
+        margin-top: rem(34px);
+        text-align: center;
+    }
+
+    @include phones {
+        text-align: center;
+        margin-top: 0;
+    }
+
+    @include small-phones {
+        font-size: rem(24px);
+        margin-top: rem(15px);
+    }
+}
+
+.charging__time {
+    font-size: rem(18px);
+    line-height: rem(21px);
+    font-weight: 700;
+}
+
+.weight__value {
+    font-size: rem(18px);
+    line-height: rem(21px);
+    font-weight: 700;
+}

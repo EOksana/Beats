@@ -1,0 +1,45 @@
+.hamburger {
+    width: rem(27px);
+    height: rem(24px);
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+
+    @include tablets {
+        display: inline-flex;
+    }
+
+    &__plank {
+        display: block;
+        background: $text;
+        height: rem(5px);
+        border-radius: 9px;
+        transition: 0.4s;
+    }
+
+    &--active {
+        z-index: 10000;
+        position: relative;
+        margin-right: rem(20px);
+
+        &>.hamburger__plank {
+            background: #FFFFFF;
+            position: absolute;
+            width: rem(30px);
+
+            &:nth-child(2) {
+                display: none;
+            }
+
+            &:nth-child(1) {
+                top: rem(10px);
+                transform: rotate(45deg);
+            }
+
+            &:nth-child(3) {
+                transform: rotate(-45deg);
+                top: rem(10px);
+            }
+        }
+    }
+}

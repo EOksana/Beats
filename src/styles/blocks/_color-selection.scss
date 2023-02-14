@@ -1,0 +1,115 @@
+.color-selection {
+    position: relative;
+    display: flex;
+    background: url(../img/girl.png) 89% 29% no-repeat;
+    background-size: auto;
+    color: #FFFFFF;
+
+    @include tablets {
+        background-size: cover;
+    }
+
+    &__title {
+        font-family: Play;
+        font-weight: 700;
+        font-size: rem(48px);
+        line-height: rem(52px);
+        margin-top: rem(115px);
+        margin-left: rem(84px);
+        text-transform: uppercase;
+
+        @include tablets {
+            margin-top: rem(91px);
+            margin-left: rem(40px);
+        }
+
+        @include phones {
+            margin-top: rem(68px);
+            margin-left: rem(10px);
+            font-size: rem(32px);
+        }
+
+        @include small-phones {
+            font-size: rem(24px);
+        }
+    }
+
+    &__content {
+        position: absolute;
+        right: 0;
+        height: 100%;
+    }
+
+    &__list {
+        display: flex;
+        height: 100%;
+        cursor: pointer;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__subtitle {
+        font-weight: 700;
+        font-size: rem(36px);
+        line-height: rem(43px);
+        margin-top: rem(34px);
+    }
+
+    &__subtitle-block {
+        writing-mode: tb-rl;
+        transform: rotate(180deg);
+        display: flex;
+        align-items: center;
+        width: rem(102px);
+
+        @include phones {
+            width: rem(90px);
+        }
+    }
+
+    &__subtitle--silver {
+        background: #999999;
+    }
+
+    &__subtitle--black {
+        background-color: #151515;
+    }
+
+    &__subtitle--red {
+        background-color: #E01F3C;
+    }
+
+    &__description {
+        width: 0;
+        padding: 0px;
+        opacity: 1;
+        overflow: hidden;
+    }
+
+}
+
+.color-selection__item_active>.color-selection__description {
+    width: rem(524px);
+    opacity: 1;
+    background-color: rgba(51, 53, 55, 0.9);
+    padding: 31px 53px 0 38px;
+    transition: 0.3s;
+
+    @include tablets {
+        width: 100%;
+    }
+}
+
+.color-selection__item_active {
+
+    @include phones {
+        width: 100vw;
+        position: sticky;
+        left: 0;
+        right: 0px;
+        z-index: 90;
+    }
+}

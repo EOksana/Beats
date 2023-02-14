@@ -1,0 +1,337 @@
+.player__volume-pic.muted {
+    position: relative;
+
+    ::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        left: 67%;
+        height: 10px;
+        width: rem(3px);
+        background-color: #f00;
+        transform: translateX(-70%) rotate(45deg);
+
+        @include phones {
+            height: rem(7px);
+            width: rem(2px);
+        }
+    }
+
+    ::after {
+        content: "";
+        position: absolute;
+        right: 40%;
+        margin: 0 auto;
+        height: rem(10px);
+        width: rem(3px);
+        background-color: #f00;
+        transform: translateX(70%) rotate(-45deg);
+
+        @include phones {
+            height: rem(7px);
+            width: rem(2px);
+        }
+    }
+}
+
+.player__volume-icon-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.video {
+    position: relative;
+
+    &__circle-svg {
+        position: absolute;
+        width: rem(47px);
+        height: rem(47px);
+        top: rem(-16px);
+        left: rem(80px);
+
+        @include small-phones {
+            left: rem(40px);
+        }
+    }
+
+    &__hexagon-svg {
+        position: absolute;
+        width: rem(47px);
+        height: rem(47px);
+        bottom: rem(-22px);
+        right: rem(99px);
+
+        @include phones {
+            right: rem(47px);
+        }
+    }
+
+    &__title {
+        font-family: "Play";
+        font-weight: 700;
+        font-size: rem(48px);
+        line-height: rem(52px);
+        text-transform: uppercase;
+
+        @include phones {
+            font-size: rem(32px);
+        }
+    }
+}
+
+.container--video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: rem(52px);
+
+    @include tablets {
+        padding-bottom: rem(14px);
+    }
+
+    @include tablets {
+        padding-bottom: 0;
+    }
+}
+
+.player {
+    margin-top: rem(47px);
+    width: 70%;
+
+    @include tablets {
+        margin-top: rem(36px);
+        width: 81%;
+
+    }
+
+    @include phones {
+        margin-top: rem(14px);
+        width: 86%;
+
+    }
+
+    &__wrapper {
+        position: relative;
+        background-color: #3e3e3e;
+        width: 100%;
+        height: rem(356px);
+
+        @include tablets {
+            height: rem(320px);
+        }
+
+        @include phones {
+            height: rem(223px);
+        }
+    }
+
+    &__splash {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("../img/boy.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        z-index: 30;
+    }
+
+    &__splash-play {
+        width: rem(48px);
+        height: rem(71px);
+
+        @include tablets {
+            width: rem(67px);
+            height: rem(98px);
+        }
+
+        @include tablets {
+            width: rem(45px);
+            height: rem(66px);
+        }
+    }
+
+    &__controls {
+        display: flex;
+        align-items: center;
+        position: relative;
+        background-color: #151515;
+        padding: 8px 20px 8px;
+        justify-content: space-around;
+
+        @include phones {
+            padding: rem(4px) rem(10px) rem(4px);
+        }
+    }
+
+    &__splash-play--start {
+        width: rem(12px);
+        height: rem(17px);
+
+        @include phones {
+            width: rem(7px);
+            height: rem(10px);
+        }
+
+    }
+
+    &__line {
+        position: relative;
+        height: rem(4px);
+        padding: 0;
+        width: 100%;
+        margin-left: rem(10px);
+        background: #626262;
+        z-index: 20;
+
+    }
+
+    &__line-button {
+        position: absolute;
+        border: none;
+        outline: none;
+        width: rem(13px);
+        height: rem(13px);
+        border-radius: 50%;
+        left: 0;
+        top: rem(-4px);
+        background: #626262;
+
+        @include phones {
+            width: rem(10px);
+            height: rem(10px);
+        }
+    }
+
+    &__splash-sound {
+        width: rem(13px);
+        height: rem(16px);
+
+        @include phones {
+            width: rem(7px);
+            height: rem(10px);
+        }
+    }
+
+    &__volume {
+        margin-left: 1%;
+        width: 20%;
+        display: flex;
+        align-items: center;
+    }
+
+    &__duration {
+        width: 55%;
+        height: 100%;
+        display: flex;
+
+        @include phones {
+            width: 45%;
+        }
+    }
+
+    &__line {
+        position: relative;
+        height: rem(4px);
+        padding: 0;
+        width: 100%;
+        margin-left: rem(10px);
+        background: #626262;
+        z-index: 20;
+    }
+
+    &__time {
+        // display: flex;
+        color: #fff;
+        font-family: "Play";
+        font-size: rem(14px);
+
+        @include phones {
+            font-size: rem(10px);
+        }
+
+    }
+
+    &__volume-pic {
+        display: flex;
+    }
+
+    &__start {
+        display: flex;
+    }
+}
+
+.paused {
+    background: #fff;
+    position: relative;
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 5px;
+        height: 100%;
+        background: #fff;
+
+    }
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: rem(5px);
+        height: 100%;
+        background: #fff;
+
+    }
+}
+
+.player.active .player__splash {
+    display: none;
+}
+
+.player__main-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: rem(15px);
+    width: rem(15px);
+}
+
+.player.active .player__main-btn {
+    justify-content: space-between;
+
+    &::after {
+        content: "";
+        display: block;
+        width: rem(5px);
+        height: 100%;
+        background: #fff;
+    }
+
+    &::before {
+        content: "";
+        display: block;
+        width: rem(5px);
+        height: 100%;
+        background: #fff;
+    }
+}
+
+.player.active .player__splash-play--start {
+    display: none;
+}
+
+#yt-player {
+    width: 100%;
+    height: 100%;
+}
+
+.html5-video-player {
+    object-fit: contain;
+}
