@@ -2,7 +2,7 @@
     position: relative;
     display: flex;
     background: url(../img/girl.png) 89% 29% no-repeat;
-    background-size: auto;
+    background-size: cover;
     color: #FFFFFF;
 
     @include tablets {
